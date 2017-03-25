@@ -7,3 +7,9 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
+tdb-gui/node_modules
+tdb-gui/node
+tdb-gui/dist
+tdb-gui/etc
+tdb-gui/target
+*.iml
