@@ -19,9 +19,14 @@
       "tsconfig": "tsconfig.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/uikit-theme.less"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/uikit/dist/js/uikit.js",
+        "../node_modules/uikit/dist/js/uikit-icons.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
@@ -50,7 +55,7 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "less",
     "component": {}
   }
 }
