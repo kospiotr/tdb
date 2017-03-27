@@ -23,7 +23,6 @@ export class LayoutComponent implements OnInit {
       .filter(route => route.outlet === 'primary')
       .mergeMap(route => route.data)
       .subscribe((data) => {
-        console.log(data);
         this.title = data != null ? data['title'] : '';
       });
   }

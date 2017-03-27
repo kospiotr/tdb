@@ -22,7 +22,8 @@ public class UserRest {
     private UserRepository userRepository;
 
     @RequestMapping(method = RequestMethod.GET)
-    public Page<User> query(@QuerydslPredicate(root = User.class) Predicate predicate, Pageable pageable) {
+    public Page<User> query(@QuerydslPredicate(root = User.class) Predicate predicate, Pageable pageable) throws Exception {
+//        Thread.sleep(5000);
         return userRepository.findAll(predicate, pageable);
     }
 }

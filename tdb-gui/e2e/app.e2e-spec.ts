@@ -1,10 +1,10 @@
-import { TdbGuiPage } from './app.po';
+import { TestAppPage } from './app.po';
 
-describe('tdb-gui App', () => {
-  let page: TdbGuiPage;
+describe('test-app App', () => {
+  let page: TestAppPage;
 
   beforeEach(() => {
-    page = new TdbGuiPage();
+    page = new TestAppPage();
   });
 
   it('should display message saying app works', () => {

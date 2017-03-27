@@ -9,11 +9,6 @@ export const routes: Routes = [
     title: 'Dashboard'
   }
   },
-  {
-    path: 'users', component: UsersComponent, data: {
-    title: 'Users'
-  }
-  },
   {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
 ];
 
