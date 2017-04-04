@@ -21,6 +21,7 @@
     <modules>
         <module>tdb-gui</module>
         <module>tdb-middleware</module>
+        <module>generator</module>
     </modules>
 
     <properties>
@@ -28,6 +29,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
 
     <dependencyManagement>
         <dependencies>

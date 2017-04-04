@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<celerioPack xmlns="http://www.jaxio.com/schema/celerio">
+    <packName value="pack-custom"/>
+    <packDescription value="Generate an custom pack"/>
+    <packDescription2 value=""/>
+    <packCommand value="packCommand"/>
+    <packCommandHelp value="helpLink"/>
+    <projectLink value="projectLink"/>
+    <celerioTemplateContext>
+        <properties>
+            <property name="pagination" value="todo_default"/>
+        </properties>
+        <!--<entityContextProperties>-->
+        <!--<entityContextProperty property="rest" subPackage="rest" suffix="Resource"/>-->
+        <!--<entityContextProperty property="dto" subPackage="dto" suffix="DTO"/>-->
+        <!--<entityContextProperty property="dtoservice" subPackage="dto" suffix="DTOService"/>-->
+        <!--</entityContextProperties>-->
+    </celerioTemplateContext>
+</celerioPack>

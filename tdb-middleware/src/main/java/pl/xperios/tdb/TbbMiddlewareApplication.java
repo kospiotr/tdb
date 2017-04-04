@@ -6,7 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class TbbMiddlewareApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(TbbMiddlewareApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(TbbMiddlewareApplication.class, args);
+    }
 }

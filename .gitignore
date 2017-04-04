@@ -12,4 +12,6 @@ tdb-gui/node
 tdb-gui/dist
 tdb-gui/etc
 tdb-gui/target
+generator/generated
+generator/dump.sql
 *.iml

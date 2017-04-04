@@ -1,0 +1,33 @@
+$output.file("web/src/app/modules/${entity.model.var}/${entity.model.var}.component.ts")##
+import {Component, OnInit} from "@angular/core";
+import {Http} from "@angular/http";
+import "rxjs/add/operator/catch";
+import "rxjs/add/operator/map";
+import 'rxjs/add/operator/switchMap';
+import {${entity.name}Resources} from "./${entity.model.var}.resources";
+import { Router, ActivatedRoute, Params } from '@angular/router';
+import {Page} from "../../shared/page";
+import {${entity.name}} from "./${entity.model.var}.model";
+import {Observable} from "rxjs/Observable";
+
+
+@Component({
+  selector: 'app-${entity.model.var}',
+  templateUrl: './${entity.model.var}.component.html',
+  styleUrls: ['./${entity.model.var}.component.less']
+})
+export class ${entity.name}Component implements OnInit {
+
+  record: Observable<${entity.name}>;
+
+  constructor(private route: ActivatedRoute, private ${entity.model.var}Resources: ${entity.name}Resources) {
+  }
+
+  ngOnInit() {
+    // this.${entity.model.var}ListResources.
+    this.record = this.route.params
+      .switchMap((params: Params) => this.${entity.model.var}Resources.get(+params['id']));
+  }
+
+
+}

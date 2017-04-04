@@ -1,0 +1,21 @@
+<nav class="main-menu uk-padding-small">
+  <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+    <li>
+      <a routerLink="/dashboard"
+         routerLinkActive="uk-active">
+        <span class="uk-margin-small-right" uk-icon="icon: home"></span> Home
+      </a>
+    </li>
+    <li>
+      <a routerLink="/users"
+         routerLinkActive="uk-active">
+        <span class="uk-margin-small-right" uk-icon="icon: users"></span> Users</a>
+    </li>
+    <li *ngFor="let route of routes">
+      <a routerLink="{{route.path}}"
+         routerLinkActive="uk-active">
+        <span class="uk-margin-small-right"></span> {{route.name}}</a>
+    </li>
+  </ul>
+
+</nav>
