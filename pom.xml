@@ -19,8 +19,8 @@
     </parent>
 
     <modules>
-        <module>tdb-gui</module>
-        <module>tdb-middleware</module>
+        <module>gui</module>
+        <module>middleware</module>
         <module>generator</module>
     </modules>
 

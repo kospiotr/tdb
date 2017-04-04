@@ -1,0 +1,54 @@
+$output.file("gui/src/app/modules/${entity.model.var}/${entity.model.var}List.component.ts")##
+import {Component, OnInit} from "@angular/core";
+import {Http} from "@angular/http";
+import {${entity.name}} from "./${entity.model.var}.model";
+import {Observable} from "rxjs/Observable";
+import "rxjs/add/operator/catch";
+import "rxjs/add/operator/map";
+import {${entity.name}Resources} from "./${entity.model.var}.resources";
+import {Page} from "../../shared/page";
+import { Router, ActivatedRoute, Params } from '@angular/router';
+
+@Component({
+  selector: 'app-${entity.model.var}List',
+  templateUrl: './${entity.model.var}List.component.html',
+  styleUrls: ['./${entity.model.var}List.component.less']
+})
+export class ${entity.name}ListComponent implements OnInit {
+
+  page: Observable<Page<${entity.name}>>;
+
+  constructor(private http: Http, private ${entity.model.var}Resources: ${entity.name}Resources, private router: Router) {
+  }
+
+  ngOnInit() {
+    this.page= this.${entity.model.var}Resources.query();
+  }
+
+  refresh(){
+    this.page= this.${entity.model.var}Resources.query();
+  }
+
+  go(item: ${entity.name}) {
+    this.router.navigate(['${entity.model.var}', item.id]);
+  }
+
+  edit(item: ${entity.name}) {
+    this.router.navigate(['${entity.model.var}', item.id, 'edit']);
+  }
+
+  copy(item: ${entity.name}) {
+    this.router.navigate(['${entity.model.var}', item.id, 'copy']);
+  }
+
+  trash(item: ${entity.name}) {
+    // this.router.navigate(['${entity.model.var}', 'create']);
+    console.log('trash');
+  }
+
+  create() {
+    this.router.navigate(['${entity.model.var}', 'create']);
+  }
+
+
+}
