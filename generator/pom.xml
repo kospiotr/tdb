@@ -173,7 +173,7 @@
                         <version>3.0.2</version>
                         <executions>
                             <execution>
-                                <id>copying-resources</id>
+                                <id>copy-gui</id>
                                 <phase>generate-sources</phase>
                                 <goals>
                                     <goal>copy-resources</goal>
@@ -183,6 +183,21 @@
                                     <resources>
                                         <resource>
                                             <directory>${basedir}/generated/gui/src</directory>
+                                        </resource>
+                                    </resources>
+                                </configuration>
+                            </execution>
+                            <execution>
+                                <id>copy-web</id>
+                                <phase>generate-sources</phase>
+                                <goals>
+                                    <goal>copy-resources</goal>
+                                </goals>
+                                <configuration>
+                                    <outputDirectory>${basedir}/../middleware/src</outputDirectory>
+                                    <resources>
+                                        <resource>
+                                            <directory>${basedir}/generated/src</directory>
                                         </resource>
                                     </resources>
                                 </configuration>

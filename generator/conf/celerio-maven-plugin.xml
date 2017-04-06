@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <celerio xmlns="http://www.jaxio.com/schema/celerio" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://www.jaxio.com/schema/celerio ./xsd/celerio.xsd">
-    <configuration rootPackage="com.mycompany.myapp" applicationName="sampleapp">
+    <configuration rootPackage="pl.xperios.tdb" applicationName="tdb">
         <!-- Which tables are used for generation -->
         <tables>
             <!-- <table include="false" pattern="*_AUDIT"/> -->
@@ -33,13 +33,6 @@
 
     <entityConfigs>
 
-        <entityConfig tableName="laboratories">
-            <!--<columnConfigs>-->
-            <!--<columnConfig columnName="civility" sharedEnumName="Civility"/>-->
-            <!--<columnConfig columnName="country_code" sharedEnumName="CountryCode"/>-->
-            <!--<columnConfig columnName="password" searchField="false" searchResult="false"/>-->
-            <!--</columnConfigs>-->
-        </entityConfig>
         <!--<entityConfig tableName="PASSPORT">-->
         <!--<columnConfigs>-->
         <!--<columnConfig columnName="holder_id" associationDirection="BIDIRECTIONAL">-->
