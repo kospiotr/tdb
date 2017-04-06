@@ -1,0 +1,8 @@
+<ul class="pagination uk-pagination uk-flex-right uk-margin-medium-top" uk-margin>
+  <li>Total {{page.totalElements}} records</li>
+  <li *ngIf="hasPrevious()"><a href="#"><span uk-pagination-previous></span></a></li>
+  <li><a href="#">1</a></li>
+  <li class="uk-disabled"><span> of </span></li>
+  <li><a href="#">{{page.totalPages}}</a></li>
+  <li *ngIf="hasNext()"><a href="#"><span uk-pagination-next></span></a></li>
+</ul>

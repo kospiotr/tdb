@@ -7,11 +7,11 @@ release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
-tdb-gui/node_modules
-tdb-gui/node
-tdb-gui/dist
-tdb-gui/etc
-tdb-gui/target
+gui/node_modules
+gui/node
+gui/dist
+gui/etc
+gui/target
 generator/generated
 generator/dump.sql
 *.iml

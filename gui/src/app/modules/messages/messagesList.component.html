@@ -1,0 +1,66 @@
+<div class="uk-padding">
+
+  <nav class="toolbar uk-navbar uk-navbar-container">
+    <div class="uk-navbar-left uk-navbar-item">
+      <form class="uk-search uk-search-default">
+        <span class="uk-search-icon-flip" uk-search-icon></span>
+        <input class="uk-search-input" type="search">
+      </form>
+      <div class="uk-navbar-item">
+        <a href="" class="uk-icon" uk-icon="icon: more"></a>
+      </div>
+    </div>
+    <div class="uk-navbar-right uk-navbar-item">
+      <ul class="uk-iconnav">
+        <li><a (click)="create()" uk-icon="icon: plus"></a></li>
+        <li><a uk-icon="icon: download"></a></li>
+        <li><a (click)="refresh()" uk-icon="icon: refresh"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="uk-margin" *ngIf="page | async as pageResult else loading">
+
+    <div class="uk-grid uk-child-width-1-2@s uk-child-width-1-3@m">
+
+      <div *ngFor="let item of pageResult.content" class="uk-margin-bottom">
+        <div class="uk-card uk-card-default uk-card-hover item" (click)="go(item)">
+          <div class="uk-card-header">
+            <div class="uk-grid uk-flex-middle" uk-grid>
+              <div class="uk-width-auto">
+                <!--<img class="uk-border-circle" width="40" height="40" src="https://getuikit.com/docs/images/avatar.jpg">-->
+                <i uk-icon="icon: messages"></i>
+              </div>
+              <div class="uk-width-expand">
+                <h3 class="uk-card-title uk-margin-remove-bottom">{{item.messagesname}}</h3>
+                <p class="uk-text-meta uk-margin-remove-top">
+                  <!--<time datetime="2016-04-01T19:00">April 01, 2016</time>-->
+                  {{item.status}}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="uk-card-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+            <div class="item-toolbar uk-animation-scale-up">
+              <ul class="uk-iconnav uk-float-right">
+                <li><a uk-icon="icon: file-edit" (click)="edit(item)"></a></li>
+                <li><a uk-icon="icon: copy" (click)="copy(item)"></a></li>
+                <li><a uk-icon="icon: trash" (click)="trash(item)"></a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <app-pagination [page]="pageResult"></app-pagination>
+  </div>
+  <ng-template #loading>
+    <div class="uk-text-center uk-padding-large">
+
+    <div uk-spinner></div>
+    <div class="uk-align-center">Loading ...</div>
+    </div>
+  </ng-template>
+</div>
