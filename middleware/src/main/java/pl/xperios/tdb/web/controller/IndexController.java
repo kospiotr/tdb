@@ -1,12 +1,11 @@
 package pl.xperios.tdb.web.controller;
 
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@PreAuthorize("hasAuthority('TDB.homepage.read')")
+//@PreAuthorize("hasAuthority('TDB.homepage.read')")
 public class IndexController {
 //
 //    @RequestMapping(value = "/")
