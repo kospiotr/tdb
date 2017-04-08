@@ -1,0 +1,69 @@
+aaa This is a sample 'per project' template.
+
+Templates doc: http://www.jaxio.com/documentation/celerio/templates.html
+
+Here is a simple script:
+
+    ${entity.model.type}: Assets
+    ${entity.model.var}: assets
+    ${entity.model.getter}: getAssets
+    ${entity.service.type}: AssetsService
+    ${entity.service.var}: assetsService
+    ${entity.service.getter}: getAssetsService
+
+    ${entity.model.type}: Laboratories
+    ${entity.model.var}: laboratories
+    ${entity.model.getter}: getLaboratories
+    ${entity.service.type}: LaboratoriesService
+    ${entity.service.var}: laboratoriesService
+    ${entity.service.getter}: getLaboratoriesService
+
+    ${entity.model.type}: Messages
+    ${entity.model.var}: messages
+    ${entity.model.getter}: getMessages
+    ${entity.service.type}: MessagesService
+    ${entity.service.var}: messagesService
+    ${entity.service.getter}: getMessagesService
+
+    ${entity.model.type}: Newsletters
+    ${entity.model.var}: newsletters
+    ${entity.model.getter}: getNewsletters
+    ${entity.service.type}: NewslettersService
+    ${entity.service.var}: newslettersService
+    ${entity.service.getter}: getNewslettersService
+
+    ${entity.model.type}: Research
+    ${entity.model.var}: research
+    ${entity.model.getter}: getResearch
+    ${entity.service.type}: ResearchService
+    ${entity.service.var}: researchService
+    ${entity.service.getter}: getResearchService
+
+    ${entity.model.type}: Scientists
+    ${entity.model.var}: scientists
+    ${entity.model.getter}: getScientists
+    ${entity.service.type}: ScientistsService
+    ${entity.service.var}: scientistsService
+    ${entity.service.getter}: getScientistsService
+
+    ${entity.model.type}: Services
+    ${entity.model.var}: services
+    ${entity.model.getter}: getServices
+    ${entity.service.type}: ServicesService
+    ${entity.service.var}: servicesService
+    ${entity.service.getter}: getServicesService
+
+    ${entity.model.type}: Technologies
+    ${entity.model.var}: technologies
+    ${entity.model.getter}: getTechnologies
+    ${entity.service.type}: TechnologiesService
+    ${entity.service.var}: technologiesService
+    ${entity.service.getter}: getTechnologiesService
+
+    ${entity.model.type}: Users
+    ${entity.model.var}: users
+    ${entity.model.getter}: getUsers
+    ${entity.service.type}: UsersService
+    ${entity.service.var}: usersService
+    ${entity.service.getter}: getUsersService
+

@@ -34,7 +34,7 @@
         <celerio-maven-plugin.configuration>conf/celerio-maven-plugin.xml</celerio-maven-plugin.configuration>
         <celerio-maven-plugin.packs.configuration>conf/celerio-template-packs.xml
         </celerio-maven-plugin.packs.configuration>
-        <celerio-maven-plugin.outputDir>${basedir}/generated</celerio-maven-plugin.outputDir>
+        <celerio-maven-plugin.outputDir>${basedir}/../</celerio-maven-plugin.outputDir>
 
         <!-- MYSQL DATABASE SETTINGS-->
         <jdbc.groupId>mysql</jdbc.groupId>

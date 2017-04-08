@@ -23,8 +23,8 @@
         </dateMappings>
         <conventions>
             <wellKnownFolders>
-                <wellKnownFolder wellKnownFolder="JAVA" folder="../middleware/src/main/java"
-                                 generatedFolder="../middleware/src/main/generated-java"/>
+                <wellKnownFolder wellKnownFolder="JAVA" folder="./middleware/src/main/java"
+                                 generatedFolder="./middleware/src/main/generated-java"/>
             </wellKnownFolders>
         </conventions>
         <headerComment>
@@ -95,45 +95,45 @@
 
     <!-- CHANGE IT OR COMMENT IT IF YOU USE YOUR OWN DATABASE -->
     <!-- Generate enums used by the entities above -->
-    <sharedEnumConfigs>
-        <sharedEnumConfig name="Civility" type="STRING">
-            <enumValues>
-                <enumValue value="MR">
-                    <labels>
-                        <label value="Mister"/>
-                        <label value="Monsieur" lang="fr"/>
-                    </labels>
-                </enumValue>
-                <enumValue value="MS">
-                    <labels>
-                        <label value="Miss"/>
-                        <label value="Madame" lang="fr"/>
-                    </labels>
-                </enumValue>
-            </enumValues>
-        </sharedEnumConfig>
-        <sharedEnumConfig name="CountryCode" type="CUSTOM">
-            <enumValues>
-                <enumValue name="FRANCE" value="+33">
-                    <labels>
-                        <label value="France"/>
-                        <label value="France" lang="fr"/>
-                    </labels>
-                </enumValue>
-                <enumValue name="ITALY" value="+39">
-                    <labels>
-                        <label value="Italy"/>
-                        <label value="Italie" lang="fr"/>
-                    </labels>
-                </enumValue>
-                <enumValue name="USA" value="+1">
-                    <labels>
-                        <label value="United-States"/>
-                        <label value="Etats-Unis" lang="fr"/>
-                    </labels>
-                </enumValue>
-            </enumValues>
-        </sharedEnumConfig>
+    <!--<sharedEnumConfigs>-->
+    <!--<sharedEnumConfig name="Civility" type="STRING">-->
+    <!--<enumValues>-->
+    <!--<enumValue value="MR">-->
+    <!--<labels>-->
+    <!--<label value="Mister"/>-->
+    <!--<label value="Monsieur" lang="fr"/>-->
+    <!--</labels>-->
+    <!--</enumValue>-->
+    <!--<enumValue value="MS">-->
+    <!--<labels>-->
+    <!--<label value="Miss"/>-->
+    <!--<label value="Madame" lang="fr"/>-->
+    <!--</labels>-->
+    <!--</enumValue>-->
+    <!--</enumValues>-->
+    <!--</sharedEnumConfig>-->
+    <!--<sharedEnumConfig name="CountryCode" type="CUSTOM">-->
+    <!--<enumValues>-->
+    <!--<enumValue name="FRANCE" value="+33">-->
+    <!--<labels>-->
+    <!--<label value="France"/>-->
+    <!--<label value="France" lang="fr"/>-->
+    <!--</labels>-->
+    <!--</enumValue>-->
+    <!--<enumValue name="ITALY" value="+39">-->
+    <!--<labels>-->
+    <!--<label value="Italy"/>-->
+    <!--<label value="Italie" lang="fr"/>-->
+    <!--</labels>-->
+    <!--</enumValue>-->
+    <!--<enumValue name="USA" value="+1">-->
+    <!--<labels>-->
+    <!--<label value="United-States"/>-->
+    <!--<label value="Etats-Unis" lang="fr"/>-->
+    <!--</labels>-->
+    <!--</enumValue>-->
+    <!--</enumValues>-->
+    <!--</sharedEnumConfig>-->
 
-    </sharedEnumConfigs>
+    <!--</sharedEnumConfigs>-->
 </celerio>

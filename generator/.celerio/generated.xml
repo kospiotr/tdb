@@ -1,0 +1,12 @@
+<map>
+  <entry>
+    <string>target/celerio-maven-plugin/collisions/pom.xml</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>bootstrap/pom.boot.vm.xml</template>
+      <size>551</size>
+      <path>target/celerio-maven-plugin/collisions/pom.xml</path>
+      <lastMod>1491686054000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+</map>
