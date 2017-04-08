@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/config/SecurityConfiguration.java.p.vm
+ * Template pack-custom:middleware/src/main/java/config/SecurityConfiguration.java.p.vm
  */
 package pl.xperios.tdb.config;
 

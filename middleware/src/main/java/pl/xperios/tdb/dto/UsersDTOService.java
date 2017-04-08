@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/dto/EntityDTOService.java.e.vm
+ * Template pack-custom:middleware/src/main/java/dto/EntityDTOService.java.e.vm
  */
 package pl.xperios.tdb.dto;
 

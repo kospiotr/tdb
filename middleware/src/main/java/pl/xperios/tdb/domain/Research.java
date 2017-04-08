@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/domain/Entity.java.e.vm
+ * Template pack-custom:middleware/src/main/java/domain/Entity.java.e.vm
  */
 package pl.xperios.tdb.domain;
 
@@ -153,7 +153,7 @@ public class Research implements Identifiable<Integer>, Serializable {
     // -- [type] ------------------------
 
     @Size(max = 128)
-    @Column(name = "`type`", length = 128)
+    @Column(name = "\"type\"", length = 128)
     public String getType() {
         return type;
     }
@@ -397,7 +397,7 @@ public class Research implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 10)
-    @Column(name = "`state`", nullable = false, length = 10)
+    @Column(name = "\"state\"", nullable = false, length = 10)
     public String getState() {
         return state;
     }

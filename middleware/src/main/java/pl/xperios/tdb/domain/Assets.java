@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/domain/Entity.java.e.vm
+ * Template pack-custom:middleware/src/main/java/domain/Entity.java.e.vm
  */
 package pl.xperios.tdb.domain;
 
@@ -88,7 +88,7 @@ public class Assets implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 64)
-    @Column(name = "`type`", nullable = false, length = 64)
+    @Column(name = "\"type\"", nullable = false, length = 64)
     public String getType() {
         return type;
     }

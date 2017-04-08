@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/domain/Entity.java.e.vm
+ * Template pack-custom:middleware/src/main/java/domain/Entity.java.e.vm
  */
 package pl.xperios.tdb.domain;
 
@@ -358,7 +358,7 @@ public class Scientists implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 512)
-    @Column(name = "`password`", nullable = false, length = 512)
+    @Column(name = "\"password\"", nullable = false, length = 512)
     public String getPassword() {
         return password;
     }
@@ -424,7 +424,7 @@ public class Scientists implements Identifiable<Integer>, Serializable {
     // -- [admin] ------------------------
 
     @NotNull
-    @Column(name = "`admin`", nullable = false, length = 0)
+    @Column(name = "\"admin\"", nullable = false, length = 0)
     public Boolean getAdmin() {
         return admin;
     }

@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/rest/support/AutoCompleteQuery.java.p.vm
+ * Template pack-custom:middleware/src/main/java/rest/support/AutoCompleteQuery.java.p.vm
  */
 package pl.xperios.tdb.rest.support;
 

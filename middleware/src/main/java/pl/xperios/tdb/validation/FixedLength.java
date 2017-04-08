@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/validation/FixedLength.p.vm.java
+ * Template pack-custom:middleware/src/main/java/validation/FixedLength.p.vm.java
  */
 package pl.xperios.tdb.validation;
 

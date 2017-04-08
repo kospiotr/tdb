@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/dto/support/LazyLoadEvent.java.p.vm
+ * Template pack-custom:middleware/src/main/java/dto/support/LazyLoadEvent.java.p.vm
  */
 package pl.xperios.tdb.dto.support;
 

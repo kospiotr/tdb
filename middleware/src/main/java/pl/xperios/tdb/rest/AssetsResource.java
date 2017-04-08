@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/rest/EntityResource.java.e.vm
+ * Template pack-custom:middleware/src/main/java/rest/EntityResource.java.e.vm
  */
 package pl.xperios.tdb.rest;
 

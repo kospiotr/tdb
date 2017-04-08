@@ -21,11 +21,18 @@
             <dateMapping columnJdbcType="TIMESTAMP" mappedType="M_LOCALDATETIME"/>
             <dateMapping columnJdbcType="DATE" mappedType="M_LOCALDATE"/>
         </dateMappings>
+        <conventions>
+            <wellKnownFolders>
+                <wellKnownFolder wellKnownFolder="JAVA" folder="../middleware/src/main/java"
+                                 generatedFolder="../middleware/src/main/generated-java"/>
+            </wellKnownFolders>
+        </conventions>
         <headerComment>
             <lines>
                 <line>created by: Piotr Kosmowski</line>
             </lines>
         </headerComment>
+
     </configuration>
 
 

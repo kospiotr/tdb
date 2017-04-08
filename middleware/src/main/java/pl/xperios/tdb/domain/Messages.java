@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/domain/Entity.java.e.vm
+ * Template pack-custom:middleware/src/main/java/domain/Entity.java.e.vm
  */
 package pl.xperios.tdb.domain;
 
@@ -108,7 +108,7 @@ public class Messages implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 512)
-    @Column(name = "`type`", nullable = false, length = 512)
+    @Column(name = "\"type\"", nullable = false, length = 512)
     public String getType() {
         return type;
     }
@@ -191,7 +191,7 @@ public class Messages implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 10)
-    @Column(name = "`state`", nullable = false, length = 10)
+    @Column(name = "\"state\"", nullable = false, length = 10)
     public String getState() {
         return state;
     }

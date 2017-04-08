@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/repository/EntityRepository.java.e.vm
+ * Template pack-custom:middleware/src/main/java/repository/EntityRepository.java.e.vm
  */
 package pl.xperios.tdb.repository;
 

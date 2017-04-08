@@ -14,18 +14,11 @@
             <pack name="pack-custom" path="packs" enable="true">
 
                 <properties>
-                 <!--user can override pack properties -->
-                <property name="pagination" value="todo"/>
+                    <!--user can override pack properties -->
+                    <property name="pagination" value="todo"/>
                 </properties>
             </pack>
         </packs>
-        <headerComment>
-            <lines>
-                <line>
-
-                </line>
-            </lines>
-        </headerComment>
 
     </configuration>
 </celerio>

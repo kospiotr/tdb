@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/domain/Entity.java.e.vm
+ * Template pack-custom:middleware/src/main/java/domain/Entity.java.e.vm
  */
 package pl.xperios.tdb.domain;
 
@@ -25,7 +25,7 @@ import com.google.common.base.MoreObjects;
 import com.google.common.base.Objects;
 
 @Entity
-@Table(name = "`users`")
+@Table(name = "\"users\"")
 public class Users implements Identifiable<Integer>, Serializable {
     private static final long serialVersionUID = 1L;
     private static final Logger log = Logger.getLogger(Users.class.getName());
@@ -97,7 +97,7 @@ public class Users implements Identifiable<Integer>, Serializable {
 
     @NotEmpty
     @Size(max = 1024)
-    @Column(name = "`password`", nullable = false, length = 1024)
+    @Column(name = "\"password\"", nullable = false, length = 1024)
     public String getPassword() {
         return password;
     }
@@ -198,7 +198,7 @@ public class Users implements Identifiable<Integer>, Serializable {
     // -- [size] ------------------------
 
     @Size(max = 32)
-    @Column(name = "`size`", length = 32)
+    @Column(name = "\"size\"", length = 32)
     public String getSize() {
         return size;
     }
@@ -214,7 +214,7 @@ public class Users implements Identifiable<Integer>, Serializable {
     // -- [connection] ------------------------
 
     @NotNull
-    @Column(name = "`connection`", nullable = false, length = 0)
+    @Column(name = "\"connection\"", nullable = false, length = 0)
     public Boolean getConnection() {
         return connection;
     }

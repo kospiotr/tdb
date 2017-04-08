@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/domain/Entity.java.e.vm
+ * Template pack-custom:middleware/src/main/java/domain/Entity.java.e.vm
  */
 package pl.xperios.tdb.domain;
 
@@ -115,7 +115,7 @@ public class Newsletters implements Identifiable<String>, Serializable {
     // -- [admin] ------------------------
 
     @NotNull
-    @Column(name = "`admin`", nullable = false, length = 0)
+    @Column(name = "\"admin\"", nullable = false, length = 0)
     public Boolean getAdmin() {
         return admin;
     }

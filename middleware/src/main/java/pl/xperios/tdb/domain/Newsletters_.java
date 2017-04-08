@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/domain/EntityMeta_.java.e.vm
+ * Template pack-custom:middleware/src/main/java/domain/EntityMeta_.java.e.vm
  */
 package pl.xperios.tdb.domain;
 

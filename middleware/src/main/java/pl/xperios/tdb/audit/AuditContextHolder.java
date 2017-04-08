@@ -1,6 +1,6 @@
 /*
  * created by: Piotr Kosmowski
- * Template pack-custom:src/main/java/audit/AuditContextHolder.p.vm.java
+ * Template pack-custom:middleware/src/main/java/audit/AuditContextHolder.p.vm.java
  */
 package pl.xperios.tdb.audit;
 
