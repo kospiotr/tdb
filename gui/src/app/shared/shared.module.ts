@@ -1,6 +1,6 @@
 //
 // created by: Piotr Kosmowski
-// Template pack-custom:gui/src/app/modules/entities/entity.module.ts.e.vm
+// Template pack-custom:gui/src/app/gen-modules/entities/entity.module.ts.e.vm
 //
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";

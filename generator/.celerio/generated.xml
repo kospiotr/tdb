@@ -40,12 +40,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrument.model.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.model.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
       <size>386</size>
-      <path>gui/src/app/modules/instrument/instrument.model.ts</path>
+      <path>gui/src/app/gen-modules/instrument/instrument.model.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -60,32 +60,32 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/department.component.html</string>
+    <string>gui/src/app/gen-modules/department/department.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
       <size>1457</size>
-      <path>gui/src/app/modules/department/department.component.html</path>
+      <path>gui/src/app/gen-modules/department/department.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permission.resources.ts</string>
+    <string>gui/src/app/gen-modules/permission/permission.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.resources.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
       <size>808</size>
-      <path>gui/src/app/modules/permission/permission.resources.ts</path>
+      <path>gui/src/app/gen-modules/permission/permission.resources.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrumentList.component.html</string>
+    <string>gui/src/app/gen-modules/instrument/instrumentList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
       <size>2607</size>
-      <path>gui/src/app/modules/instrument/instrumentList.component.html</path>
+      <path>gui/src/app/gen-modules/instrument/instrumentList.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -100,12 +100,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrumentList.component.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrumentList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
       <size>1475</size>
-      <path>gui/src/app/modules/instrument/instrumentList.component.ts</path>
+      <path>gui/src/app/gen-modules/instrument/instrumentList.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -130,12 +130,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrumentList.component.less</string>
+    <string>gui/src/app/gen-modules/instrument/instrumentList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/instrument/instrumentList.component.less</path>
+      <path>gui/src/app/gen-modules/instrument/instrumentList.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -150,12 +150,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/department.component.less</string>
+    <string>gui/src/app/gen-modules/department/department.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/department/department.component.less</path>
+      <path>gui/src/app/gen-modules/department/department.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -180,12 +180,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnit.module.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.module.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.module.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
       <size>869</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnit.module.ts</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.module.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -240,12 +240,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/user.component.less</string>
+    <string>gui/src/app/gen-modules/user/user.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/user/user.component.less</path>
+      <path>gui/src/app/gen-modules/user/user.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -350,32 +350,32 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permission.component.html</string>
+    <string>gui/src/app/gen-modules/permission/permission.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
       <size>1457</size>
-      <path>gui/src/app/modules/permission/permission.component.html</path>
+      <path>gui/src/app/gen-modules/permission/permission.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/user.module.ts</string>
+    <string>gui/src/app/gen-modules/user/user.module.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.module.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
       <size>739</size>
-      <path>gui/src/app/modules/user/user.module.ts</path>
+      <path>gui/src/app/gen-modules/user/user.module.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/department.component.ts</string>
+    <string>gui/src/app/gen-modules/department/department.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
       <size>1070</size>
-      <path>gui/src/app/modules/department/department.component.ts</path>
+      <path>gui/src/app/gen-modules/department/department.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -420,22 +420,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrument.component.html</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
       <size>1457</size>
-      <path>gui/src/app/modules/instrument/instrument.component.html</path>
+      <path>gui/src/app/gen-modules/instrument/instrument.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnit.routes.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.routes.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
       <size>1172</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnit.routes.ts</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.routes.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -450,32 +450,32 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroup.model.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.model.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
       <size>379</size>
-      <path>gui/src/app/modules/userGroup/userGroup.model.ts</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.model.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroupList.component.less</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/userGroup/userGroupList.component.less</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnit.component.html</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
       <size>1461</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnit.component.html</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -550,12 +550,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnit.component.less</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnit.component.less</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -610,42 +610,42 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroup.component.html</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
       <size>1456</size>
-      <path>gui/src/app/modules/userGroup/userGroup.component.html</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/user.routes.ts</string>
+    <string>gui/src/app/gen-modules/user/user.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.routes.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
       <size>972</size>
-      <path>gui/src/app/modules/user/user.routes.ts</path>
+      <path>gui/src/app/gen-modules/user/user.routes.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroup.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
       <size>769</size>
-      <path>gui/src/app/modules/userGroup/userGroup.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnit.model.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.model.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
       <size>300</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnit.model.ts</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.model.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -670,12 +670,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrument.component.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
       <size>1070</size>
-      <path>gui/src/app/modules/instrument/instrument.component.ts</path>
+      <path>gui/src/app/gen-modules/instrument/instrument.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -700,62 +700,62 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/userList.component.html</string>
+    <string>gui/src/app/gen-modules/user/userList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
       <size>2595</size>
-      <path>gui/src/app/modules/user/userList.component.html</path>
+      <path>gui/src/app/gen-modules/user/userList.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroupList.component.html</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
       <size>2605</size>
-      <path>gui/src/app/modules/userGroup/userGroupList.component.html</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permission.component.less</string>
+    <string>gui/src/app/gen-modules/permission/permission.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/permission/permission.component.less</path>
+      <path>gui/src/app/gen-modules/permission/permission.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnitList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
       <size>836</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnitList.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroup.routes.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.routes.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
       <size>1072</size>
-      <path>gui/src/app/modules/userGroup/userGroup.routes.ts</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.routes.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/userList.component.less</string>
+    <string>gui/src/app/gen-modules/user/userList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/user/userList.component.less</path>
+      <path>gui/src/app/gen-modules/user/userList.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -770,12 +770,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrument.component.less</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/instrument/instrument.component.less</path>
+      <path>gui/src/app/gen-modules/instrument/instrument.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -820,12 +820,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/departmentList.component.html</string>
+    <string>gui/src/app/gen-modules/department/departmentList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
       <size>2607</size>
-      <path>gui/src/app/modules/department/departmentList.component.html</path>
+      <path>gui/src/app/gen-modules/department/departmentList.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -840,32 +840,32 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroup.component.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
       <size>1057</size>
-      <path>gui/src/app/modules/userGroup/userGroup.component.ts</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnitList.component.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
       <size>1563</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnitList.component.ts</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/department.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/department/department.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
       <size>776</size>
-      <path>gui/src/app/modules/department/department.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/department/department.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -880,12 +880,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrument.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
       <size>776</size>
-      <path>gui/src/app/modules/instrument/instrument.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/instrument/instrument.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -930,22 +930,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/user.resources.ts</string>
+    <string>gui/src/app/gen-modules/user/user.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.resources.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
       <size>748</size>
-      <path>gui/src/app/modules/user/user.resources.ts</path>
+      <path>gui/src/app/gen-modules/user/user.resources.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/departmentList.component.less</string>
+    <string>gui/src/app/gen-modules/department/departmentList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/department/departmentList.component.less</path>
+      <path>gui/src/app/gen-modules/department/departmentList.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -960,12 +960,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/user.component.html</string>
+    <string>gui/src/app/gen-modules/user/user.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
       <size>1451</size>
-      <path>gui/src/app/modules/user/user.component.html</path>
+      <path>gui/src/app/gen-modules/user/user.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -990,12 +990,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnit.resources.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.resources.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
       <size>848</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnit.resources.ts</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.resources.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1020,12 +1020,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/department.module.ts</string>
+    <string>gui/src/app/gen-modules/department/department.module.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.module.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
       <size>817</size>
-      <path>gui/src/app/modules/department/department.module.ts</path>
+      <path>gui/src/app/gen-modules/department/department.module.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1050,12 +1050,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permission.module.ts</string>
+    <string>gui/src/app/gen-modules/permission/permission.module.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.module.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
       <size>817</size>
-      <path>gui/src/app/modules/permission/permission.module.ts</path>
+      <path>gui/src/app/gen-modules/permission/permission.module.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1080,12 +1080,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrument.module.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.module.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.module.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
       <size>817</size>
-      <path>gui/src/app/modules/instrument/instrument.module.ts</path>
+      <path>gui/src/app/gen-modules/instrument/instrument.module.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1280,22 +1280,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/department.model.ts</string>
+    <string>gui/src/app/gen-modules/department/department.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.model.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
       <size>217</size>
-      <path>gui/src/app/modules/department/department.model.ts</path>
+      <path>gui/src/app/gen-modules/department/department.model.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnitList.component.html</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
       <size>2615</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnitList.component.html</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1380,12 +1380,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permission.component.ts</string>
+    <string>gui/src/app/gen-modules/permission/permission.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
       <size>1070</size>
-      <path>gui/src/app/modules/permission/permission.component.ts</path>
+      <path>gui/src/app/gen-modules/permission/permission.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1410,22 +1410,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnit.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
       <size>804</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnit.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnitList.component.less</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnitList.component.less</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1440,12 +1440,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permissionList.component.ts</string>
+    <string>gui/src/app/gen-modules/permission/permissionList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
       <size>1475</size>
-      <path>gui/src/app/modules/permission/permissionList.component.ts</path>
+      <path>gui/src/app/gen-modules/permission/permissionList.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1470,12 +1470,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/userList.component.ts</string>
+    <string>gui/src/app/gen-modules/user/userList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
       <size>1343</size>
-      <path>gui/src/app/modules/user/userList.component.ts</path>
+      <path>gui/src/app/gen-modules/user/userList.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1490,22 +1490,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroup.resources.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.resources.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
       <size>798</size>
-      <path>gui/src/app/modules/userGroup/userGroup.resources.ts</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.resources.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroupList.component.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
       <size>1453</size>
-      <path>gui/src/app/modules/userGroup/userGroupList.component.ts</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1590,52 +1590,52 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>target/celerio-maven-plugin/collisions/gui/src/app/modules/generatedModules.ts</string>
+    <string>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/generatedModules.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/generatedModules.ts.p.vm</template>
+      <template>gui/src/app/gen-modules/generatedModules.ts.p.vm</template>
       <size>970</size>
-      <path>target/celerio-maven-plugin/collisions/gui/src/app/modules/generatedModules.ts</path>
+      <path>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/generatedModules.ts</path>
       <lastMod>1491756811000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/departmentUnit/departmentUnit.component.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
       <size>1122</size>
-      <path>gui/src/app/modules/departmentUnit/departmentUnit.component.ts</path>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrument.resources.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.resources.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
       <size>808</size>
-      <path>gui/src/app/modules/instrument/instrument.resources.ts</path>
+      <path>gui/src/app/gen-modules/instrument/instrument.resources.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/user.component.ts</string>
+    <string>gui/src/app/gen-modules/user/user.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
       <size>992</size>
-      <path>gui/src/app/modules/user/user.component.ts</path>
+      <path>gui/src/app/gen-modules/user/user.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/user.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/user/user.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
       <size>734</size>
-      <path>gui/src/app/modules/user/user.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/user/user.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1670,12 +1670,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/user.model.ts</string>
+    <string>gui/src/app/gen-modules/user/user.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.model.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
       <size>367</size>
-      <path>gui/src/app/modules/user/user.model.ts</path>
+      <path>gui/src/app/gen-modules/user/user.model.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1720,22 +1720,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/departmentList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/department/departmentList.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
       <size>808</size>
-      <path>gui/src/app/modules/department/departmentList.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/department/departmentList.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/user/userList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/user/userList.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
       <size>766</size>
-      <path>gui/src/app/modules/user/userList.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/user/userList.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1760,12 +1760,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/department.routes.ts</string>
+    <string>gui/src/app/gen-modules/department/department.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.routes.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
       <size>1092</size>
-      <path>gui/src/app/modules/department/department.routes.ts</path>
+      <path>gui/src/app/gen-modules/department/department.routes.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1800,12 +1800,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroup.component.less</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/userGroup/userGroup.component.less</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1830,22 +1830,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permissionList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/permission/permissionList.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
       <size>808</size>
-      <path>gui/src/app/modules/permission/permissionList.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/permission/permissionList.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/departmentList.component.ts</string>
+    <string>gui/src/app/gen-modules/department/departmentList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
       <size>1475</size>
-      <path>gui/src/app/modules/department/departmentList.component.ts</path>
+      <path>gui/src/app/gen-modules/department/departmentList.component.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -1860,12 +1860,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroup.module.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.module.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.module.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
       <size>804</size>
-      <path>gui/src/app/modules/userGroup/userGroup.module.ts</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.module.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -2020,12 +2020,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permission.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/permission/permission.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
       <size>776</size>
-      <path>gui/src/app/modules/permission/permission.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/permission/permission.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -2070,12 +2070,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permissionList.component.html</string>
+    <string>gui/src/app/gen-modules/permission/permissionList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.html.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
       <size>2607</size>
-      <path>gui/src/app/modules/permission/permissionList.component.html</path>
+      <path>gui/src/app/gen-modules/permission/permissionList.component.html</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -2090,22 +2090,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/generatedModules.ts</string>
+    <string>gui/src/app/gen-modules/generatedModules.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/generatedModules.ts.p.vm</template>
+      <template>gui/src/app/gen-modules/generatedModules.ts.p.vm</template>
       <size>970</size>
-      <path>gui/src/app/modules/generatedModules.ts</path>
+      <path>gui/src/app/gen-modules/generatedModules.ts</path>
       <lastMod>1491756963000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permissionList.component.less</string>
+    <string>gui/src/app/gen-modules/permission/permissionList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.less.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/modules/permission/permissionList.component.less</path>
+      <path>gui/src/app/gen-modules/permission/permissionList.component.less</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -2130,12 +2130,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permission.routes.ts</string>
+    <string>gui/src/app/gen-modules/permission/permission.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.routes.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
       <size>1092</size>
-      <path>gui/src/app/modules/permission/permission.routes.ts</path>
+      <path>gui/src/app/gen-modules/permission/permission.routes.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -2150,22 +2150,22 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/userGroup/userGroupList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
       <size>801</size>
-      <path>gui/src/app/modules/userGroup/userGroupList.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrument.routes.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.routes.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
       <size>1092</size>
-      <path>gui/src/app/modules/instrument/instrument.routes.ts</path>
+      <path>gui/src/app/gen-modules/instrument/instrument.routes.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -2190,12 +2190,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/department/department.resources.ts</string>
+    <string>gui/src/app/gen-modules/department/department.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.resources.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
       <size>808</size>
-      <path>gui/src/app/modules/department/department.resources.ts</path>
+      <path>gui/src/app/gen-modules/department/department.resources.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -2240,12 +2240,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/instrument/instrumentList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrumentList.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entityList.component.spec.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
       <size>808</size>
-      <path>gui/src/app/modules/instrument/instrumentList.component.spec.ts</path>
+      <path>gui/src/app/gen-modules/instrument/instrumentList.component.spec.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -2300,12 +2300,12 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/modules/permission/permission.model.ts</string>
+    <string>gui/src/app/gen-modules/permission/permission.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/modules/entities/entity.model.ts.e.vm</template>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
       <size>220</size>
-      <path>gui/src/app/modules/permission/permission.model.ts</path>
+      <path>gui/src/app/gen-modules/permission/permission.model.ts</path>
       <lastMod>1491756964000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>

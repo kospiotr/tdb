@@ -1,6 +1,6 @@
 //
 // created by: Piotr Kosmowski
-// Template pack-custom:gui/src/app/modules/generatedModules.ts.p.vm
+// Template pack-custom:gui/src/app/gen-modules/generatedModules.ts.p.vm
 //
 import {UserGroupUserModule} from "./userGroupUser/userGroupUser.module";
 import {DepartmentModule} from "./department/department.module";
