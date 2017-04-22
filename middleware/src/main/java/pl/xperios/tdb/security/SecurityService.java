@@ -35,7 +35,7 @@ public class SecurityService {
     @Transactional(readOnly = true)
     @Cacheable(cacheNames = "UserPrincipal", key = "#username")
     public Optional<UserPrincipal> findUser(String username) {
-        User user = userRepository.findByUsername(username);
+        User user = userRepository.getByUsername(username);
         if (user == null) {
             return Optional.empty();
         }
@@ -47,9 +47,9 @@ public class SecurityService {
     public UserPrincipal mapUserToUserPrincipal(User user) {
         List<String> authorities = new ArrayList<>();
 
-        List<Permission> userPermissions = user.getPermission();
+        List<Permission> userPermissions = user.getPermissions();
         List<UserGroup> userGroups = new ArrayList<>();
-        userGroups.addAll(user.getUserGroup());
+        userGroups.addAll(user.getUserGroups());
         userGroups.add(getAnybodyUserGroup());
         userGroups.add(getDefaultUserGroup(user.getUsername()));
 
@@ -67,7 +67,7 @@ public class SecurityService {
     }
 
     private UserGroup getAnybodyUserGroup() {
-        Optional<UserGroup> out = userGroupRepository.findByName(GlobalValues.UserGroups.ANYBODY);
+        Optional<UserGroup> out = Optional.ofNullable(userGroupRepository.getByName(GlobalValues.UserGroups.ANYBODY));
         return out.isPresent() ?
                 out.get() :
                 out.orElseThrow(() -> new IllegalStateException("Can't find user group 'anybody'"));
@@ -76,9 +76,9 @@ public class SecurityService {
     private UserGroup getDefaultUserGroup(String username) {
         Optional<UserGroup> out;
         if (username == null || GUEST.equalsIgnoreCase(username)) {
-            out = userGroupRepository.findByName(GlobalValues.UserGroups.ANONYMOUS);
+            out = Optional.ofNullable(userGroupRepository.getByName(GlobalValues.UserGroups.ANONYMOUS));
         } else {
-            out = userGroupRepository.findByName(GlobalValues.UserGroups.USER);
+            out = Optional.ofNullable(userGroupRepository.getByName(GlobalValues.UserGroups.USER));
         }
 
         return out.isPresent() ?
@@ -95,7 +95,7 @@ public class SecurityService {
 
     private List<String> extractPermissionsFromUserGroups(List<UserGroup> userGroups) {
         return userGroups.stream()
-                .map(UserGroup::getPermission)
+                .map(UserGroup::getPermissions)
                 .flatMap(Collection::stream)
                 .map(Permission::getName)
                 .collect(toList());

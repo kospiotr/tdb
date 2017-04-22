@@ -6,6 +6,8 @@
         <tables>
             <!-- <table include="false" pattern="*_AUDIT"/> -->
             <table include="false" pattern="jhi_persistent_*"/>
+            <table include="false" pattern="DATABASECHANGELOG"/>
+            <table include="false" pattern="DATABASECHANGELOGLOCK"/>
         </tables>
 
         <!-- global number mapping (optional) -->
@@ -35,63 +37,62 @@
 
     </configuration>
 
-
+    <entityConfigs>
+        <entityConfig tableName="user_group_user" associationDirection="BIDIRECTIONAL"></entityConfig>
+    </entityConfigs>
     <!-- CHANGE IT OR COMMENT IT IF YOU USE YOUR OWN DATABASE -->
 
-    <entityConfigs>
+    <!--<entityConfig tableName="PASSPORT">-->
+    <!--<columnConfigs>-->
+    <!--<columnConfig columnName="holder_id" associationDirection="BIDIRECTIONAL">-->
+    <!--<oneToManyConfig var="passportHolder"/>-->
+    <!--<inverseOneToOneConfig var="passport"/>&lt;!&ndash; var that is generated on User entity side &ndash;&gt;-->
+    <!--</columnConfig>-->
+    <!--</columnConfigs>-->
+    <!--</entityConfig>-->
 
-        <!--<entityConfig tableName="PASSPORT">-->
-        <!--<columnConfigs>-->
-        <!--<columnConfig columnName="holder_id" associationDirection="BIDIRECTIONAL">-->
-        <!--<oneToManyConfig var="passportHolder"/>-->
-        <!--<inverseOneToOneConfig var="passport"/>&lt;!&ndash; var that is generated on User entity side &ndash;&gt;-->
-        <!--</columnConfig>-->
-        <!--</columnConfigs>-->
-        <!--</entityConfig>-->
+    <!--<entityConfig tableName="AUTHOR">-->
+    <!--<columnConfigs>-->
+    <!--<columnConfig columnName="first_name" min="2" searchResult="true" displayOrder="3"/>-->
+    <!--<columnConfig columnName="last_name" min="2" searchResult="true" displayOrder="2"/>-->
+    <!--<columnConfig columnName="civility" sharedEnumName="Civility" searchResult="true" displayOrder="1"/>-->
+    <!--<columnConfig columnName="favorite_author_id" searchResult="true" displayOrder="4"/>-->
+    <!--</columnConfigs>-->
+    <!--</entityConfig>-->
 
-        <!--<entityConfig tableName="AUTHOR">-->
-        <!--<columnConfigs>-->
-        <!--<columnConfig columnName="first_name" min="2" searchResult="true" displayOrder="3"/>-->
-        <!--<columnConfig columnName="last_name" min="2" searchResult="true" displayOrder="2"/>-->
-        <!--<columnConfig columnName="civility" sharedEnumName="Civility" searchResult="true" displayOrder="1"/>-->
-        <!--<columnConfig columnName="favorite_author_id" searchResult="true" displayOrder="4"/>-->
-        <!--</columnConfigs>-->
-        <!--</entityConfig>-->
+    <!--<entityConfig tableName="BOOK">-->
+    <!--<columnConfigs>-->
+    <!--<columnConfig columnName="author_id">-->
+    <!--&lt;!&ndash; will generate the one to many association on the Author side &ndash;&gt;-->
+    <!--<oneToManyConfig elementVar="book" var="books" orphanRemoval="true"/>-->
+    <!--</columnConfig>-->
+    <!--<columnConfig columnName="co_author_id" searchField="false"/>-->
+    <!--<columnConfig columnName="extract_binary">-->
+    <!--<labels>-->
+    <!--<label lang="fr" value="Extrait (fichier)..."/>-->
+    <!--<label value="Extract (file)..."/>-->
+    <!--</labels>-->
+    <!--</columnConfig>-->
+    <!--</columnConfigs>-->
+    <!--</entityConfig>-->
 
-        <!--<entityConfig tableName="BOOK">-->
-        <!--<columnConfigs>-->
-        <!--<columnConfig columnName="author_id">-->
-        <!--&lt;!&ndash; will generate the one to many association on the Author side &ndash;&gt;-->
-        <!--<oneToManyConfig elementVar="book" var="books" orphanRemoval="true"/>-->
-        <!--</columnConfig>-->
-        <!--<columnConfig columnName="co_author_id" searchField="false"/>-->
-        <!--<columnConfig columnName="extract_binary">-->
-        <!--<labels>-->
-        <!--<label lang="fr" value="Extrait (fichier)..."/>-->
-        <!--<label value="Extract (file)..."/>-->
-        <!--</labels>-->
-        <!--</columnConfig>-->
-        <!--</columnConfigs>-->
-        <!--</entityConfig>-->
+    <!--<entityConfig tableName="PROJECT">-->
+    <!--<columnConfigs>-->
+    <!--<columnConfig columnName="author_id">-->
+    <!--&lt;!&ndash; will generate the one to many association on the Author side &ndash;&gt;-->
+    <!--<oneToManyConfig elementVar="project" var="projects" orphanRemoval="true"/>-->
+    <!--</columnConfig>-->
+    <!--</columnConfigs>-->
+    <!--</entityConfig>-->
 
-        <!--<entityConfig tableName="PROJECT">-->
-        <!--<columnConfigs>-->
-        <!--<columnConfig columnName="author_id">-->
-        <!--&lt;!&ndash; will generate the one to many association on the Author side &ndash;&gt;-->
-        <!--<oneToManyConfig elementVar="project" var="projects" orphanRemoval="true"/>-->
-        <!--</columnConfig>-->
-        <!--</columnConfigs>-->
-        <!--</entityConfig>-->
-
-        <!--<entityConfig tableName="USE_CASE_3">-->
-        <!--<columnConfigs>-->
-        <!--<columnConfig columnName="id2">-->
-        <!--&lt;!&ndash; will generate the one to many association on the UseCase2 side &ndash;&gt;-->
-        <!--<oneToManyConfig var="useCase3s" orphanRemoval="true"/>-->
-        <!--</columnConfig>-->
-        <!--</columnConfigs>-->
-        <!--</entityConfig>-->
-    </entityConfigs>
+    <!--<entityConfig tableName="USE_CASE_3">-->
+    <!--<columnConfigs>-->
+    <!--<columnConfig columnName="id2">-->
+    <!--&lt;!&ndash; will generate the one to many association on the UseCase2 side &ndash;&gt;-->
+    <!--<oneToManyConfig var="useCase3s" orphanRemoval="true"/>-->
+    <!--</columnConfig>-->
+    <!--</columnConfigs>-->
+    <!--</entityConfig>-->
 
     <!-- CHANGE IT OR COMMENT IT IF YOU USE YOUR OWN DATABASE -->
     <!-- Generate enums used by the entities above -->

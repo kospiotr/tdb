@@ -22,9 +22,6 @@ import java.io.Serializable;
  */
 public interface Identifiable<PK extends Serializable> {
 
-    String entityClassName();
-
-
     /**
      * @return the primary key
      */
@@ -37,10 +34,4 @@ public interface Identifiable<PK extends Serializable> {
      */
     void setId(PK id);
 
-    /**
-     * Helper method to know whether the primary key is set or not.
-     *
-     * @return true if the primary key is set, false otherwise
-     */
-    boolean isIdSet();
 }

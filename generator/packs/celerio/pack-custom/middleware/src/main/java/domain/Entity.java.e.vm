@@ -13,10 +13,8 @@
 ## limitations under the License.
 ##
 $output.java($entity.model)##
-
-$output.require("java.util.logging.Logger")##
-$output.require("com.google.common.base.MoreObjects")##
-$output.require("com.google.common.base.Objects")##
+$output.require("lombok.*")##
+$output.require("lombok.extern.slf4j.Slf4j")##
 
 #if($entity.hasComment())
 /**
@@ -40,6 +38,10 @@ public class ${entity.model.type}_ extends ${entity.model.type}Base_ {
 ## ==============================================
 $output.dynamicAnnotation("javax.persistence.MappedSuperclass")
 #end
+@Slf4j
+@Data
+@EqualsAndHashCode(of = "$entity.primaryKey.var")
+@ToString(of = {#foreach ($attribute in $entity.nonCpkAttributes.list)#if(!$attribute.isInFk() || $attribute.isSimplePk())"${attribute.var}", #end#end})
 #foreach ($annotation in $entity.jpa.annotations)
 $annotation
 #end
@@ -54,8 +56,6 @@ public#if ($output.isAbstract()) abstract#{end} class ${output.currentClass}${en
 $output.require($entity.parent.model)##
 public#if ($output.isAbstract()) abstract#{end} class $output.currentClass extends $entity.parent.model.type {
 #end
-    private static final long serialVersionUID = 1L;
-    private static final Logger log = Logger.getLogger(${output.currentClass}.class.getName());
 #if ($entity.isRoot() && $entity.primaryKey.isComposite())
 
     // Composite primary key
@@ -67,9 +67,23 @@ public#if ($output.isAbstract()) abstract#{end} class $output.currentClass exten
 
     // Raw attributes
 #end
+#if($attribute.hasComment())$attribute.javadoc#end
 #if(!$attribute.isInFk() || $attribute.isSimplePk())
+#foreach ($annotation in $attribute.custom.annotations)
+    $annotation
+#end
+#foreach ($annotation in $attribute.validation.annotations)
+    $annotation
+#end
+#foreach ($annotation in $attribute.jpa.annotations)
+    $annotation
+#end
+#foreach ($annotation in $attribute.formatter.annotations)
+    $annotation
+#end
 $output.require($attribute)##
     private $attribute.type $attribute.var;
+
 #end
 #end
 ## --------------- Many to One
@@ -77,6 +91,15 @@ $output.require($attribute)##
 #if ($velocityCount == 1)
 
     // Many to one
+#end
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // many-to-one: $manyToOne.toString()
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+#foreach ($annotation in $manyToOne.validation.annotations)
+    $annotation
+#end
+#foreach ($annotation in $manyToOne.jpa.annotations)
+    $annotation
 #end
 $output.require($manyToOne.to)##
     private $manyToOne.to.type $manyToOne.to.var;
@@ -86,6 +109,16 @@ $output.require($manyToOne.to)##
 #if ($velocityCount == 1)
 
     // One to one
+#end
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // #{if}($relation.isInverse())Inverse#{else}Owner#{end} side of one-to-one relation: $relation.toString()
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+## TODO : add @NotNull annotation
+#foreach ($annotation in $relation.validation.annotations)
+    $annotation
+#end
+#foreach ($annotation in $relation.jpa.annotations)
+    $annotation
 #end
 $output.require($oneToOne.to)##
     private $oneToOne.to.type $oneToOne.to.var;
@@ -99,6 +132,9 @@ $output.require($oneToOne.to)##
 $output.require($entity.collectionType.fullType)##
 $output.require($entity.collectionType.implementationFullType)##
 $output.require($oneToVirtualOne.to)##
+#foreach ($annotation in $relation.jpa.annotations)
+    $annotation
+#end
     private ${entity.collectionType.type}<$oneToVirtualOne.to.type> $oneToVirtualOne.to.vars = new ${entity.collectionType.implementationType}<$oneToVirtualOne.to.type>();
 #end
 ## --------------- One to many
@@ -106,6 +142,13 @@ $output.require($oneToVirtualOne.to)##
 #if ($velocityCount == 1)
 
     // One to many
+#end
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // one to many: $relation.fromEntity.model.var ==> $relation.to.vars
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+#foreach ($annotation in $relation.jpa.annotations)
+    $annotation
 #end
 $output.require($entity.collectionType.fullType)##
 $output.require($entity.collectionType.implementationFullType)##
@@ -121,13 +164,15 @@ $output.require($oneToMany.to)##
 $output.require($entity.collectionType.fullType)##
 $output.require($entity.collectionType.implementationFullType)##
 $output.require($manyToMany.to)##
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+    // many-to-many: $manyToMany.fromEntity.model.var ==> $manyToMany.to.vars
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+#foreach ($annotation in $manyToMany.jpa.annotations)
+    $annotation
+#end
     private ${entity.collectionType.type}<$manyToMany.to.type> $manyToMany.to.vars = new ${entity.collectionType.implementationType}<$manyToMany.to.type>();
 #end
-
-    @Override
-    public String entityClassName() {
-        return ${entity.model.type}.class.getSimpleName();
-    }
 
 #if ($entity.isRoot() && $entity.primaryKey.isComposite())
 
@@ -208,63 +253,12 @@ $output.require("$entity.collectionType.implementationFullType")##
             roleNames.add("ROLE_ADMIN");
         }
 
-        log.warning("Returning hard coded role names. TODO: get the real role names");
+        log.warn("Returning hard coded role names. TODO: get the real role names");
         return roleNames;
     }
 #end
 #end
-#foreach ($attribute in $entity.nonCpkAttributes.list)
-#if(!$attribute.isInFk() || $attribute.isSimplePk())
-    // -- [${attribute.var}] ------------------------
 
-#if($attribute.hasComment())$attribute.javadoc#end
-#if ($attribute.isSimplePk())
-    @Override
-#end
-#foreach ($annotation in $attribute.custom.annotations)
-    $annotation
-#end
-#foreach ($annotation in $attribute.validation.annotations)
-    $annotation
-#end
-#foreach ($annotation in $attribute.jpa.annotations)
-    $annotation
-#end
-#foreach ($annotation in $attribute.formatter.annotations)
-    $annotation
-#end
-    public $attribute.type ${attribute.getter}() {
-        return $attribute.var;
-    }
-#if ($attribute.isSetterAccessibilityPublic())
-
-#if ($attribute.isSimplePk())
-    @Override
-#end
-    public void ${attribute.setter}($attribute.type $attribute.var) {
-        this.$attribute.var = $attribute.var;
-    }
-
-    public ${output.currentRootClass} ${attribute.with}($attribute.type $attribute.var) {
-        ${attribute.setter}($attribute.var);
-        return ${output.currentRootCast}this;
-    }
-#else
-
-    private void ${attribute.setter}($attribute.type $attribute.var) {
-        this.$attribute.var = $attribute.var;
-    }
-#end
-#if($attribute.isSimplePk())
-
-    @Override
-    $output.dynamicAnnotation("javax.persistence.Transient")
-    public boolean ${attribute.has}() {
-        return $attribute.var != null#if ($attribute.isString() && !$attribute.isEnum()) && !${attribute.var}.isEmpty()#end;
-    }
-#end
-#end
-#end
 ## --------------- Many to one
 #foreach ($relation in $entity.manyToOne.list)
 #if ($velocityCount == 1)
@@ -278,16 +272,6 @@ $output.require("$entity.collectionType.implementationFullType")##
     // many-to-one: $relation.toString()
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-#foreach ($annotation in $relation.validation.annotations)
-    $annotation
-#end
-#foreach ($annotation in $relation.jpa.annotations)
-    $annotation
-#end
-    public $relation.to.type ${relation.to.getter}() {
-        return $relation.to.var;
-    }
-
     /**
      * Set the {@link #$relation.to.var} without adding this $relation.from.type instance on the passed {@link #${relation.to.var}}
 #if($relation.hasInverse())
@@ -297,7 +281,7 @@ $output.require("$entity.collectionType.implementationFullType")##
      */
     public void ${relation.to.setter}($relation.to.type $relation.to.var) {
         this.$relation.to.var = $relation.to.var;
-#if (!$relation.isIntermediate())        
+#if (!$relation.isIntermediate())
 #foreach ($attributePair in $relation.attributePairs)
 #if ($attributePair.fromAttribute.isInCpk() && $attributePair.toAttribute.isInCpk())
          ${identifiableProperty.getter}().${attributePair.fromAttribute.setter}($relation.to.var != null ? ${relation.to.var}.${identifiableProperty.getter}().${attributePair.toAttribute.getter}() : null);
@@ -320,20 +304,6 @@ $output.require("$entity.collectionType.implementationFullType")##
     // -----------------------------------------------------------------
 #end
 
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-    // #{if}($relation.isInverse())Inverse#{else}Owner#{end} side of one-to-one relation: $relation.toString()
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-## TODO : add @NotNull annotation
-#foreach ($annotation in $relation.validation.annotations)
-    $annotation
-#end
-#foreach ($annotation in $relation.jpa.annotations)
-    $annotation
-#end
-    public $relation.to.type ${relation.to.getter}() {
-        return $relation.to.var;
-    }
-
 #if($relation.isInverse())
 ## Inverse ONE TO ONE SETTER (analog to a one to many)
     public void ${relation.to.setter}($relation.to.type $relation.to.var) {
@@ -347,7 +317,7 @@ $output.require("$entity.collectionType.implementationFullType")##
 ## FORWARD ONE TO ONE SETTER
     public void ${relation.to.setter}($relation.to.type $relation.to.var) {
         this.$relation.to.var = $relation.to.var;
-#if (!$relation.isIntermediate())        
+#if (!$relation.isIntermediate())
 #foreach ($attributePair in $relation.attributePairs)
 #if ($attributePair.fromAttribute.isInCpk() && $attributePair.toAttribute.isInCpk())
         ${identifiableProperty.getter}().${attributePair.fromAttribute.setter}($relation.to.var != null ? ${relation.to.var}.${identifiableProperty.getter}().${attributePair.toAttribute.getter}() : null);
@@ -424,9 +394,6 @@ $output.require("$entity.collectionType.implementationFullType")##
      *
      * @return the $relation.to.vars list
      */
-#foreach ($annotation in $relation.jpa.annotations)
-    $annotation
-#end
     protected ${entity.collectionType.type}<$relation.to.type> ${relation.to.getters}() {
         return $relation.to.vars;
     }
@@ -455,13 +422,6 @@ $output.require("$entity.collectionType.implementationFullType")##
     // one to many: $relation.fromEntity.model.var ==> $relation.to.vars
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-#foreach ($annotation in $relation.jpa.annotations)
-    $annotation
-#end
-    public ${entity.collectionType.type}<$relation.to.type> ${relation.to.getters}() {
-        return $relation.to.vars;
-    }
-
     /**
      * Set the {@link $relation.to.type} list.
      * It is recommended to use the helper method {@link ${p}${relation.to.adder}($relation.to.type)} / {@link ${p}${relation.to.remover}($relation.to.type)}
@@ -472,7 +432,7 @@ $output.require("$entity.collectionType.implementationFullType")##
     public void ${relation.to.setters}(${entity.collectionType.type}<$relation.to.type> $relation.to.vars) {
         this.$relation.to.vars = $relation.to.vars;
     }
-    
+
 
     /**
      * Helper method to add the passed {@link $relation.to.type} to the {@link #$relation.to.vars} list
@@ -514,19 +474,9 @@ $output.require("$entity.collectionType.implementationFullType")##
     // -----------------------------------------------------------------
 #end
 
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
     // many-to-many: $relation.fromEntity.model.var ==> $relation.to.vars
-    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
-
-    /**
-     * Returns the {@link #$relation.to.vars} list.
-     */
-#foreach ($annotation in $relation.jpa.annotations)
-    $annotation
-#end
-    public ${entity.collectionType.type}<$relation.to.type> ${relation.to.getters}() {
-        return $relation.to.vars;
-    }
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
     /**
      * Set the {@link #$relation.to.vars} list.
@@ -591,65 +541,6 @@ $output.require("$entity.collectionType.implementationFullType")##
     }
 #end
 
-    /**
-     * Apply the default values.
-     */
-    public ${output.currentRootClass} withDefaults() {
-#if ($entity.hasParent())
-        super.withDefaults();
-#end
-#foreach ($attribute in $entity.pertinentDefaultValueAttributes.list)
-        ${attribute.setter}($attribute.javaDefaultValue);
-#end
-        return ${output.currentRootCast}this;
-    }
-
-    /**
-     * Equals implementation using a business key.
-     */
-    @Override
-    public boolean equals(Object other) {
-        return ${output.currentRootCast}this == other || (other instanceof $output.currentClass && hashCode() == other.hashCode());
-    }
-
-#if($entity.useBusinessKey())
-
-    private volatile int previousHashCode = 0;
-
-    @Override
-    public int hashCode() {
-        int hashCode = Objects.hashCode(
-#foreach($bka in $entity.businessKey)
-#if ($bka.isJavaUtilDate())
-            DateUtil.toSecondPrecisionDate(${bka.getter}())$project.print($velocityHasNext,", //", ");")
-#elseif($bka.isSimpleFk())
-## can happen if user configured it => risky, but it is his choice
-            ${bka.xToOneRelation.to.getter}().${identifiableProperty.getter}()$project.print($velocityHasNext,", //", ");")
-#else
-            ${bka.getter}()$project.print($velocityHasNext,", //", ");")
-#end
-#end
-
-        if (previousHashCode != 0 && previousHashCode != hashCode) {
-            log.warning("DEVELOPER: hashCode has changed!." //
-                    + "If you encounter this message you should take the time to carefuly review equals/hashCode for: " //
-                    + getClass().getCanonicalName());
-        }
-
-        previousHashCode = hashCode;
-        return hashCode;
-    }
-
-#elseif($entity.isRoot())    
-$output.require($ModelSupport, "IdentifiableHashBuilder")##
-    private IdentifiableHashBuilder identifiableHashBuilder = new IdentifiableHashBuilder();
-
-    @Override
-    public int hashCode() {
-        return identifiableHashBuilder.hash(log, this);
-    }
-
-#end
 #foreach ($bundle in $entity.attributeBundles)
 #if ($velocityCount == 1)
     // -----------------------
@@ -675,20 +566,6 @@ $output.require("com.jaxio.jpa.querybyexample.LocaleHolder")##
 
 #end
 
-    /**
-     * Construct a readable string representation for this ${output.currentClass} instance.
-     * @see java.lang.Object${p}toString()
-     */
-    @Override
-    public String toString() {
-        return #if ($entity.hasParent())super.toString() + #{end}MoreObjects.toStringHelper(this) //
-#foreach ($attribute in $entity.nonCpkAttributes.list)
-#if(!$attribute.isInFk() || $attribute.isSimplePk())
-            .add("${attribute.var}", #if($attribute.isPassword())"XXXX"#else${attribute.getter}()#end) //
-#end
-#end
-            .toString();
-    }
 #if ($configuration.has($COPYABLE))
 
     /**

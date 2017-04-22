@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata xmlns="http://www.jaxio.com/schema/celerio">
-  <jdbcConnectivity driver="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1:3306/baza381_sp" user="root" password="root" schemaName="" oracleRetrieveRemarks="false" oracleRetrieveSynonyms="true" reverseIndexes="true" reverseOnlyUniqueIndexes="true" catalog="">
+  <jdbcConnectivity driver="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1:3306/tdb_dev" user="root" password="root" schemaName="" oracleRetrieveRemarks="false" oracleRetrieveSynonyms="true" reverseIndexes="true" reverseOnlyUniqueIndexes="true" catalog="">
     <tableNamePatterns/>
     <tableTypes>
       <tableType>TABLE</tableType>
@@ -8,187 +8,76 @@
   </jdbcConnectivity>
   <databaseInfo databaseMajorVersion="5" databaseMinorVersion="5" databaseProductName="MySQL" databaseProductVersion="5.5.54-0ubuntu0.14.04.1" driverMajorVersion="5" driverMinorVersion="1" driverName="MySQL Connector Java" driverVersion="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )" extraInfo=""/>
   <tables>
-    <table name="assets" type="TABLE">
+    <table name="DATABASECHANGELOG" type="TABLE">
       <columns>
-        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
+        <column name="ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
-            <metaAttribute name="extra" value="auto_increment"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="relatedid" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="10" type="INTEGER">
+        <column name="AUTHOR" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="type" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="64" type="VARCHAR">
+        <column name="FILENAME" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(64)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="name" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="256" type="VARCHAR">
+        <column name="DATEEXECUTED" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="19" type="TIMESTAMP">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(256)"/>
+            <metaAttribute name="type" value="datetime"/>
           </metaAttributes>
         </column>
-        <column name="realname" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="11" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(11)"/>
-          </metaAttributes>
-        </column>
-      </columns>
-      <indexes>
-        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
-      </indexes>
-      <importedKeys/>
-      <primaryKeys>
-        <primaryKey>id</primaryKey>
-      </primaryKeys>
-    </table>
-    <table name="laboratories" type="TABLE">
-      <columns>
-        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
-          <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
-            <metaAttribute name="extra" value="auto_increment"/>
-          </metaAttributes>
-        </column>
-        <column name="scientist_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="10" type="INTEGER">
+        <column name="ORDEREXECUTED" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="10" type="INTEGER">
           <metaAttributes>
             <metaAttribute name="type" value="int(11)"/>
           </metaAttributes>
         </column>
-        <column name="departments" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="units" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="name" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="description" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="6" size="10000" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(10000)"/>
-          </metaAttributes>
-        </column>
-        <column name="contact" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="7" size="2000" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(2000)"/>
-          </metaAttributes>
-        </column>
-        <column name="modificationdate" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="8" size="10" type="DATE">
-          <metaAttributes>
-            <metaAttribute name="type" value="date"/>
-          </metaAttributes>
-        </column>
-        <column name="published" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="9" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="state" columnDef="waiting" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="10" size="10" type="VARCHAR">
+        <column name="EXECTYPE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="6" size="10" type="VARCHAR">
           <metaAttributes>
             <metaAttribute name="type" value="varchar(10)"/>
           </metaAttributes>
         </column>
-      </columns>
-      <indexes>
-        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
-      </indexes>
-      <importedKeys/>
-      <primaryKeys>
-        <primaryKey>id</primaryKey>
-      </primaryKeys>
-    </table>
-    <table name="messages" type="TABLE">
-      <columns>
-        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
+        <column name="MD5SUM" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="7" size="35" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="extra" value="auto_increment"/>
-            <metaAttribute name="type" value="int(11)"/>
+            <metaAttribute name="type" value="varchar(35)"/>
           </metaAttributes>
         </column>
-        <column name="user_id" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="10" type="INTEGER">
+        <column name="DESCRIPTION" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="8" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="scientist_id" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="10" type="INTEGER">
+        <column name="COMMENTS" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="9" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="type" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="512" type="VARCHAR">
+        <column name="TAG" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="10" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="name" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="512" type="VARCHAR">
+        <column name="LIQUIBASE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="11" size="20" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
+            <metaAttribute name="type" value="varchar(20)"/>
           </metaAttributes>
         </column>
-        <column name="description" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="6" size="10000" type="VARCHAR">
+        <column name="CONTEXTS" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="12" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(10000)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="modificationdate" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="7" size="10" type="DATE">
+        <column name="LABELS" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="13" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="date"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="published" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="8" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="state" columnDef="waiting" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="9" size="10" type="VARCHAR">
+        <column name="DEPLOYMENT_ID" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="14" size="10" type="VARCHAR">
           <metaAttributes>
             <metaAttribute name="type" value="varchar(10)"/>
-          </metaAttributes>
-        </column>
-      </columns>
-      <indexes>
-        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
-      </indexes>
-      <importedKeys/>
-      <primaryKeys>
-        <primaryKey>id</primaryKey>
-      </primaryKeys>
-    </table>
-    <table name="newsletters" type="TABLE">
-      <columns>
-        <column name="email" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="technologies" columnDef="0" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="projects" columnDef="0" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="messages" columnDef="0" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="admin" columnDef="0" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
           </metaAttributes>
         </column>
       </columns>
@@ -196,112 +85,53 @@
       <importedKeys/>
       <primaryKeys/>
     </table>
-    <table name="research" type="TABLE">
+    <table name="DATABASECHANGELOGLOCK" type="TABLE">
       <columns>
-        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
+        <column name="ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
           <metaAttributes>
             <metaAttribute name="type" value="int(11)"/>
+          </metaAttributes>
+        </column>
+        <column name="LOCKED" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="1" type="BIT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bit(1)"/>
+          </metaAttributes>
+        </column>
+        <column name="LOCKGRANTED" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="19" type="TIMESTAMP">
+          <metaAttributes>
+            <metaAttribute name="type" value="datetime"/>
+          </metaAttributes>
+        </column>
+        <column name="LOCKEDBY" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="department" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
             <metaAttribute name="extra" value="auto_increment"/>
+            <metaAttribute name="type" value="bigint(20)"/>
           </metaAttributes>
         </column>
-        <column name="scientist_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="10" type="INTEGER">
+        <column name="code" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="departments" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="1024" type="VARCHAR">
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="unit" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="name" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="type" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="6" size="128" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(128)"/>
-          </metaAttributes>
-        </column>
-        <column name="projecttarget" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="7" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="description" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="8" size="10000" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(10000)"/>
-          </metaAttributes>
-        </column>
-        <column name="projecttime" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="9" size="64" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(64)"/>
-          </metaAttributes>
-        </column>
-        <column name="cost" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="10" size="10" type="INTEGER">
-          <metaAttributes>
-            <metaAttribute name="type" value="int(64)"/>
-          </metaAttributes>
-        </column>
-        <column name="foundingsources" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="11" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="partners" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="12" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="results" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="13" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="industries" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="14" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="keywords" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="15" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="benefits" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="16" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="inj_benefits" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="17" size="1000" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1000)"/>
-          </metaAttributes>
-        </column>
-        <column name="scientists" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="18" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="modificationdate" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="19" size="10" type="DATE">
-          <metaAttributes>
-            <metaAttribute name="type" value="date"/>
-          </metaAttributes>
-        </column>
-        <column name="published" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="20" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="state" columnDef="waiting" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="21" size="10" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(10)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
       </columns>
@@ -313,400 +143,236 @@
         <primaryKey>id</primaryKey>
       </primaryKeys>
     </table>
-    <table name="scientists" type="TABLE">
+    <table name="department_unit" type="TABLE">
       <columns>
-        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
           <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
+            <metaAttribute name="type" value="bigint(20)"/>
             <metaAttribute name="extra" value="auto_increment"/>
           </metaAttributes>
         </column>
-        <column name="firstname" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="128" type="VARCHAR">
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(128)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="lastname" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="128" type="VARCHAR">
+        <column name="department_id" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="19" type="BIGINT">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(128)"/>
-          </metaAttributes>
-        </column>
-        <column name="sciencetitle" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="500" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(500)"/>
-          </metaAttributes>
-        </column>
-        <column name="department" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="500" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(500)"/>
-          </metaAttributes>
-        </column>
-        <column name="phone" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="6" size="128" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(128)"/>
-          </metaAttributes>
-        </column>
-        <column name="departmentunit" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="7" size="500" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(500)"/>
-          </metaAttributes>
-        </column>
-        <column name="email" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="8" size="128" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(128)"/>
-          </metaAttributes>
-        </column>
-        <column name="specializations" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="9" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="homepage" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="10" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="experience" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="11" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="implementations" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="12" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="researches" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="13" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="grants" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="14" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="evaluations" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="15" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="publications" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="16" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="own_inventions" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="17" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="password" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="18" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="validated" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="19" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="activated" columnDef="0" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="20" size="3" type="TINYINT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(4)"/>
-          </metaAttributes>
-        </column>
-        <column name="uniquestamp" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="21" size="32" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(32)"/>
-          </metaAttributes>
-        </column>
-        <column name="admin" columnDef="0" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="22" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="photo" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="23" size="40" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(40)"/>
+            <metaAttribute name="type" value="bigint(20)"/>
           </metaAttributes>
         </column>
       </columns>
       <indexes>
         <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
-        <indexe columnName="uniquestamp" indexName="uniquestamp" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="department_id" fkName="FKapply479dhuhwdgmgwochj1vx" pkColumnName="id" pkTableName="department"/>
+      </importedKeys>
+      <primaryKeys>
+        <primaryKey>id</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="instrument" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="extra" value="auto_increment"/>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="contact" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="description" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="2147483647" type="LONGVARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="longtext"/>
+          </metaAttributes>
+        </column>
+        <column name="index_no" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="department_unit_id" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="6" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="department_unit_id" fkName="FKrk1bcrn0vlo2qi5bxriva4mvo" pkColumnName="id" pkTableName="department_unit"/>
+      </importedKeys>
+      <primaryKeys>
+        <primaryKey>id</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="permission" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="extra" value="auto_increment"/>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="version" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+        <indexe columnName="name" indexName="UK_2ojme20jpga3r4r79tdso17gi" nonUnique="false"/>
       </indexes>
       <importedKeys/>
       <primaryKeys>
         <primaryKey>id</primaryKey>
       </primaryKeys>
     </table>
-    <table name="services" type="TABLE">
+    <table name="user" type="TABLE">
       <columns>
-        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
           <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
             <metaAttribute name="extra" value="auto_increment"/>
+            <metaAttribute name="type" value="bigint(20)"/>
           </metaAttributes>
         </column>
-        <column name="scientist_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="10" type="INTEGER">
+        <column name="password" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="status" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="10" type="INTEGER">
           <metaAttributes>
             <metaAttribute name="type" value="int(11)"/>
           </metaAttributes>
         </column>
-        <column name="units" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="1024" type="VARCHAR">
+        <column name="username" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="name" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="512" type="VARCHAR">
+        <column name="version" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="19" type="BIGINT">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="department" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="description" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="6" size="5000" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(5000)"/>
-          </metaAttributes>
-        </column>
-        <column name="contact" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="7" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="modificationdate" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="8" size="10" type="DATE">
-          <metaAttributes>
-            <metaAttribute name="type" value="date"/>
-          </metaAttributes>
-        </column>
-        <column name="published" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="9" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="state" columnDef="waiting" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="10" size="10" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(10)"/>
+            <metaAttribute name="type" value="bigint(20)"/>
           </metaAttributes>
         </column>
       </columns>
       <indexes>
         <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+        <indexe columnName="username" indexName="UK_sb8bbouer5wak8vyiiy4pf2bx" nonUnique="false"/>
       </indexes>
       <importedKeys/>
       <primaryKeys>
         <primaryKey>id</primaryKey>
       </primaryKeys>
     </table>
-    <table name="technologies" type="TABLE">
+    <table name="user_group" type="TABLE">
       <columns>
-        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
           <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
             <metaAttribute name="extra" value="auto_increment"/>
+            <metaAttribute name="type" value="bigint(20)"/>
           </metaAttributes>
         </column>
-        <column name="unit" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="1024" type="VARCHAR">
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
+            <metaAttribute name="type" value="varchar(255)"/>
           </metaAttributes>
         </column>
-        <column name="department" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="1024" type="VARCHAR">
+        <column name="version" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="19" type="BIGINT">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="type" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="128" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(128)"/>
-          </metaAttributes>
-        </column>
-        <column name="name" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="256" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(256)"/>
-          </metaAttributes>
-        </column>
-        <column name="targets" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="6" size="512" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(512)"/>
-          </metaAttributes>
-        </column>
-        <column name="description" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="7" size="10000" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(10000)"/>
-          </metaAttributes>
-        </column>
-        <column name="goods-innovation" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="8" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="goods-concurency" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="9" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="benefits" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="10" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="keywords" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="11" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="requestnumber" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="12" size="64" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(64)"/>
-          </metaAttributes>
-        </column>
-        <column name="requestdate" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="13" size="10" type="DATE">
-          <metaAttributes>
-            <metaAttribute name="type" value="date"/>
-          </metaAttributes>
-        </column>
-        <column name="requestcountries" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="14" size="200" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(200)"/>
-          </metaAttributes>
-        </column>
-        <column name="patentnumber" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="15" size="128" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(128)"/>
-          </metaAttributes>
-        </column>
-        <column name="patentdate" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="16" size="10" type="DATE">
-          <metaAttributes>
-            <metaAttribute name="type" value="date"/>
-          </metaAttributes>
-        </column>
-        <column name="patentcountries" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="17" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="scientists" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="18" size="2048" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(2048)"/>
-          </metaAttributes>
-        </column>
-        <column name="modificationdate" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="19" size="10" type="DATE">
-          <metaAttributes>
-            <metaAttribute name="type" value="date"/>
-          </metaAttributes>
-        </column>
-        <column name="scientist_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="20" size="10" type="INTEGER">
-          <metaAttributes>
-            <metaAttribute name="type" value="int(11)"/>
-          </metaAttributes>
-        </column>
-        <column name="published" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="21" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="state" columnDef="waiting" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="22" size="10" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(10)"/>
-          </metaAttributes>
-        </column>
-        <column name="info" columnDef="w ofercie" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="23" size="32" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(32)"/>
+            <metaAttribute name="type" value="bigint(20)"/>
           </metaAttributes>
         </column>
       </columns>
       <indexes>
         <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+        <indexe columnName="name" indexName="UK_kas9w8ead0ska5n3csefp2bpp" nonUnique="false"/>
       </indexes>
       <importedKeys/>
       <primaryKeys>
         <primaryKey>id</primaryKey>
       </primaryKeys>
     </table>
-    <table name="users" type="TABLE">
+    <table name="user_group_permission" type="TABLE">
       <columns>
-        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
+        <column name="user_group_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
           <metaAttributes>
-            <metaAttribute name="extra" value="auto_increment"/>
-            <metaAttribute name="type" value="int(11)"/>
+            <metaAttribute name="type" value="bigint(20)"/>
           </metaAttributes>
         </column>
-        <column name="email" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="256" type="VARCHAR">
+        <column name="permission_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="19" type="BIGINT">
           <metaAttributes>
-            <metaAttribute name="type" value="varchar(256)"/>
-          </metaAttributes>
-        </column>
-        <column name="password" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="1024" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(1024)"/>
-          </metaAttributes>
-        </column>
-        <column name="industry" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="256" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(256)"/>
-          </metaAttributes>
-        </column>
-        <column name="name" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="256" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(256)"/>
-          </metaAttributes>
-        </column>
-        <column name="address" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="6" size="256" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(256)"/>
-          </metaAttributes>
-        </column>
-        <column name="phone" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="7" size="256" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(256)"/>
-          </metaAttributes>
-        </column>
-        <column name="nip" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="8" size="256" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(256)"/>
-          </metaAttributes>
-        </column>
-        <column name="size" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="9" size="32" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(32)"/>
-          </metaAttributes>
-        </column>
-        <column name="connection" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="10" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="validated" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="11" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="activated" columnDef="0" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="12" size="0" type="BIT">
-          <metaAttributes>
-            <metaAttribute name="type" value="tinyint(1)"/>
-          </metaAttributes>
-        </column>
-        <column name="uniquestamp" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="13" size="32" type="VARCHAR">
-          <metaAttributes>
-            <metaAttribute name="type" value="varchar(32)"/>
+            <metaAttribute name="type" value="bigint(20)"/>
           </metaAttributes>
         </column>
       </columns>
       <indexes>
-        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
-        <indexe columnName="uniquestamp" indexName="uniquestamp" nonUnique="false"/>
+        <indexe columnName="permission_id" indexName="UK_n1u0lh4amuscu05j9tkfpqgew" nonUnique="false"/>
       </indexes>
-      <importedKeys/>
-      <primaryKeys>
-        <primaryKey>id</primaryKey>
-      </primaryKeys>
+      <importedKeys>
+        <importedKey fkColumnName="user_group_id" fkName="FKpvewqags2qqto6e9afvwadde" pkColumnName="id" pkTableName="user_group"/>
+        <importedKey fkColumnName="permission_id" fkName="FKbn8t0q3ild5ps4nath5tb9sda" pkColumnName="id" pkTableName="permission"/>
+      </importedKeys>
+      <primaryKeys/>
+    </table>
+    <table name="user_group_user" type="TABLE">
+      <columns>
+        <column name="user_group_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="user_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes/>
+      <importedKeys>
+        <importedKey fkColumnName="user_id" fkName="FKpdbp7j3b0f5wgcset6psk0spk" pkColumnName="id" pkTableName="user"/>
+        <importedKey fkColumnName="user_group_id" fkName="FK35c0kokvxaajs05y2dkeoj9x1" pkColumnName="id" pkTableName="user_group"/>
+      </importedKeys>
+      <primaryKeys/>
+    </table>
+    <table name="user_permission" type="TABLE">
+      <columns>
+        <column name="user_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="permission_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="permission_id" indexName="UK_5jfoyhv0p0tg0d5dwf8oo4rjh" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="permission_id" fkName="FKbklmo9kchans5u3e4va0ouo1s" pkColumnName="id" pkTableName="permission"/>
+        <importedKey fkColumnName="user_id" fkName="FK7c2x74rinbtf33lhdcyob20sh" pkColumnName="id" pkTableName="user"/>
+      </importedKeys>
+      <primaryKeys/>
     </table>
   </tables>
 </metadata>

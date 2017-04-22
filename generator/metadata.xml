@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.jaxio.com/schema/celerio">
+  <jdbcConnectivity driver="com.mysql.jdbc.Driver" url="jdbc:mysql://127.0.0.1:3306/tdb_dev" user="root" password="root" schemaName="" oracleRetrieveRemarks="false" oracleRetrieveSynonyms="true" reverseIndexes="true" reverseOnlyUniqueIndexes="true" catalog="">
+    <tableNamePatterns/>
+    <tableTypes>
+      <tableType>TABLE</tableType>
+    </tableTypes>
+  </jdbcConnectivity>
+  <databaseInfo databaseMajorVersion="5" databaseMinorVersion="5" databaseProductName="MySQL" databaseProductVersion="5.5.54-0ubuntu0.14.04.1" driverMajorVersion="5" driverMinorVersion="1" driverName="MySQL Connector Java" driverVersion="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )" extraInfo=""/>
+  <tables>
+    <table name="DATABASECHANGELOG" type="TABLE">
+      <columns>
+        <column name="ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="AUTHOR" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="FILENAME" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="3" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="DATEEXECUTED" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="4" size="19" type="TIMESTAMP">
+          <metaAttributes>
+            <metaAttribute name="type" value="datetime"/>
+          </metaAttributes>
+        </column>
+        <column name="ORDEREXECUTED" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="5" size="10" type="INTEGER">
+          <metaAttributes>
+            <metaAttribute name="type" value="int(11)"/>
+          </metaAttributes>
+        </column>
+        <column name="EXECTYPE" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="6" size="10" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(10)"/>
+          </metaAttributes>
+        </column>
+        <column name="MD5SUM" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="7" size="35" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(35)"/>
+          </metaAttributes>
+        </column>
+        <column name="DESCRIPTION" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="8" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="COMMENTS" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="9" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="TAG" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="10" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="LIQUIBASE" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="11" size="20" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="CONTEXTS" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="12" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="LABELS" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="13" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="DEPLOYMENT_ID" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="14" size="10" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(10)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes/>
+      <importedKeys/>
+      <primaryKeys/>
+    </table>
+    <table name="DATABASECHANGELOGLOCK" type="TABLE">
+      <columns>
+        <column name="ID" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="10" type="INTEGER">
+          <metaAttributes>
+            <metaAttribute name="type" value="int(11)"/>
+          </metaAttributes>
+        </column>
+        <column name="LOCKED" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="1" type="BIT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bit(1)"/>
+          </metaAttributes>
+        </column>
+        <column name="LOCKGRANTED" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="19" type="TIMESTAMP">
+          <metaAttributes>
+            <metaAttribute name="type" value="datetime"/>
+          </metaAttributes>
+        </column>
+        <column name="LOCKEDBY" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="ID" indexName="PRIMARY" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>ID</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="department" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="extra" value="auto_increment"/>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="code" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>id</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="department_unit" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+            <metaAttribute name="extra" value="auto_increment"/>
+          </metaAttributes>
+        </column>
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="department_id" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="department_id" fkName="FKapply479dhuhwdgmgwochj1vx" pkColumnName="id" pkTableName="department"/>
+      </importedKeys>
+      <primaryKeys>
+        <primaryKey>id</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="instrument" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+            <metaAttribute name="extra" value="auto_increment"/>
+          </metaAttributes>
+        </column>
+        <column name="contact" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="description" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="2147483647" type="LONGVARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="longtext"/>
+          </metaAttributes>
+        </column>
+        <column name="index_no" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="department_unit_id" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="6" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="department_unit_id" fkName="FKrk1bcrn0vlo2qi5bxriva4mvo" pkColumnName="id" pkTableName="department_unit"/>
+      </importedKeys>
+      <primaryKeys>
+        <primaryKey>id</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="permission" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="extra" value="auto_increment"/>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="version" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+        <indexe columnName="name" indexName="UK_2ojme20jpga3r4r79tdso17gi" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>id</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="user" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+            <metaAttribute name="extra" value="auto_increment"/>
+          </metaAttributes>
+        </column>
+        <column name="password" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="status" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="10" type="INTEGER">
+          <metaAttributes>
+            <metaAttribute name="type" value="int(11)"/>
+          </metaAttributes>
+        </column>
+        <column name="username" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="4" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="version" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="5" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+        <indexe columnName="username" indexName="UK_sb8bbouer5wak8vyiiy4pf2bx" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>id</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="user_group" type="TABLE">
+      <columns>
+        <column name="id" decimalDigits="0" autoIncrement="true" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+            <metaAttribute name="extra" value="auto_increment"/>
+          </metaAttributes>
+        </column>
+        <column name="name" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="2" size="255" type="VARCHAR">
+          <metaAttributes>
+            <metaAttribute name="type" value="varchar(255)"/>
+          </metaAttributes>
+        </column>
+        <column name="version" decimalDigits="0" autoIncrement="false" nullable="true" ordinalPosition="3" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="id" indexName="PRIMARY" nonUnique="false"/>
+        <indexe columnName="name" indexName="UK_kas9w8ead0ska5n3csefp2bpp" nonUnique="false"/>
+      </indexes>
+      <importedKeys/>
+      <primaryKeys>
+        <primaryKey>id</primaryKey>
+      </primaryKeys>
+    </table>
+    <table name="user_group_permission" type="TABLE">
+      <columns>
+        <column name="user_group_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="permission_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="permission_id" indexName="UK_n1u0lh4amuscu05j9tkfpqgew" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="user_group_id" fkName="FKpvewqags2qqto6e9afvwadde" pkColumnName="id" pkTableName="user_group"/>
+        <importedKey fkColumnName="permission_id" fkName="FKbn8t0q3ild5ps4nath5tb9sda" pkColumnName="id" pkTableName="permission"/>
+      </importedKeys>
+      <primaryKeys/>
+    </table>
+    <table name="user_group_user" type="TABLE">
+      <columns>
+        <column name="user_group_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="user_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes/>
+      <importedKeys>
+        <importedKey fkColumnName="user_id" fkName="FKpdbp7j3b0f5wgcset6psk0spk" pkColumnName="id" pkTableName="user"/>
+        <importedKey fkColumnName="user_group_id" fkName="FK35c0kokvxaajs05y2dkeoj9x1" pkColumnName="id" pkTableName="user_group"/>
+      </importedKeys>
+      <primaryKeys/>
+    </table>
+    <table name="user_permission" type="TABLE">
+      <columns>
+        <column name="user_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="1" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+        <column name="permission_id" decimalDigits="0" autoIncrement="false" nullable="false" ordinalPosition="2" size="19" type="BIGINT">
+          <metaAttributes>
+            <metaAttribute name="type" value="bigint(20)"/>
+          </metaAttributes>
+        </column>
+      </columns>
+      <indexes>
+        <indexe columnName="permission_id" indexName="UK_5jfoyhv0p0tg0d5dwf8oo4rjh" nonUnique="false"/>
+      </indexes>
+      <importedKeys>
+        <importedKey fkColumnName="permission_id" fkName="FKbklmo9kchans5u3e4va0ouo1s" pkColumnName="id" pkTableName="permission"/>
+        <importedKey fkColumnName="user_id" fkName="FK7c2x74rinbtf33lhdcyob20sh" pkColumnName="id" pkTableName="user"/>
+      </importedKeys>
+      <primaryKeys/>
+    </table>
+  </tables>
+</metadata>

@@ -21,19 +21,45 @@ $output.require("java.math.BigInteger")##
 #if ($entity.hasUniqueDateAttribute() || $entity.root.hasDatePk())
 $output.require("java.util.Date")##
 #end
+#set( $QueryDslModel = $entity.model.packageName + ".Q" + $entity.model.type )
 $output.require($entity.model)##
+$output.require($QueryDslModel)##
 $output.require($entity.root.primaryKey)##
 #foreach ($enumAttribute in $entity.uniqueEnumAttributes.list)
 $output.require($enumAttribute)##
 #end
-$output.require("org.springframework.data.jpa.repository.*")##
-$output.require("org.springframework.data.domain.Page")##
-$output.require("org.springframework.data.domain.PageRequest")##
-$output.require("org.springframework.data.domain.ExampleMatcher")##
-$output.require("org.springframework.data.domain.Example")##
+$output.require("org.springframework.data.domain.*")##
+$output.require("org.springframework.data.jpa.repository.JpaRepository")##
+$output.require("org.springframework.data.querydsl.QueryDslPredicateExecutor")##
+$output.require("org.springframework.data.querydsl.binding.QuerydslBinderCustomizer")##
+$output.require("org.springframework.data.querydsl.binding.QuerydslBindings")##
+$output.require("org.springframework.data.repository.CrudRepository")##
 $output.requireMetamodel($entity.model)##
 
-public interface $output.currentClass extends JpaRepository<$entity.model.type, $entity.root.primaryKey.type> {
+public interface $output.currentClass extends CrudRepository<$entity.model.type, $entity.root.primaryKey.type>, JpaRepository<$entity.model.type, $entity.root.primaryKey.type>, QueryDslPredicateExecutor<$entity.model.type>, QuerydslBinderCustomizer<Q$entity.model.type>{
+
+    default List<$entity.model.type> complete(String query, int maxResults) {
+        $entity.model.type probe = new ${entity.model.type}();
+    #foreach($attr in $entity.printerAttributes.flatUp.list)
+        #if($attr.isString() && !$attr.isEnum())
+        probe.${attr.setter}(query);
+            #break
+        #end
+    #end
+
+        ExampleMatcher matcher = ExampleMatcher.matching() //
+    #foreach($attr in $entity.printerAttributes.flatUp.list)
+        #if($attr.isString() && !$attr.isEnum())
+            .withMatcher(${entity.model.type}_.${attr.var}.getName(), match -> match.ignoreCase().startsWith())
+            #break
+        #end
+    #end;
+
+        Page<$entity.model.type> page = findAll(Example.of(probe, matcher), new PageRequest(0, maxResults));
+        return page.getContent();
+    }
+
+
 #foreach ($uniqueAttribute in $entity.uniqueAttributes.list)
 
     /**
@@ -47,25 +73,6 @@ $output.require("$uniqueAttribute.fullType")##
     $entity.model.type ${uniqueAttribute.uniqueGetter}($uniqueAttribute.type ${uniqueAttribute.var});
 #end
 
-    default List<$entity.model.type> complete(String query, int maxResults) {
-        $entity.model.type probe = new ${entity.model.type}();
-#foreach($attr in $entity.printerAttributes.flatUp.list)
-#if($attr.isString() && !$attr.isEnum())
-        probe.${attr.setter}(query);
-#break
-#end
-#end
-
-        ExampleMatcher matcher = ExampleMatcher.matching() //
-#foreach($attr in $entity.printerAttributes.flatUp.list)
-#if($attr.isString() && !$attr.isEnum())
-            .withMatcher(${entity.model.type}_.${attr.var}.getName(), match -> match.ignoreCase().startsWith())
-#break
-#end
-#end
-        ;
-
-        Page<$entity.model.type> page = findAll(Example.of(probe, matcher), new PageRequest(0, maxResults));
-        return page.getContent();
+    default void customize(QuerydslBindings bindings, Q$entity.model.type member) {
     }
 }

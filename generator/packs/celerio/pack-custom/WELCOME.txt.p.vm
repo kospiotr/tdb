@@ -12,5 +12,15 @@ Here is a simple script:
     ${d}{entity.service.type}: $entity.service.type
     ${d}{entity.service.var}: $entity.service.var
     ${d}{entity.service.getter}: $entity.service.getter
+    Relationships:
+    #foreach($relation in $entity.manyToMany.list)
+        - ManyToMany $relation From: $relation.fromEntity.model.var To: $relation.to.vars
+    #end
+    #foreach($relation in $entity.bidirectionalManyToMany.list)
+        - Biderictional ManyToMany $relation From: $relation.fromEntity.model.var To: $relation.to.vars
+    #end
+    #foreach($relation in $entity.unidirectionalManyToMany.list)
+        - UnidirectionalManyToMany ManyToMany $relation From: $relation.fromEntity.model.var To: $relation.to.vars
+    #end
 #end
 

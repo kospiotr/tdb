@@ -34,14 +34,14 @@
         <celerio-maven-plugin.configuration>conf/celerio-maven-plugin.xml</celerio-maven-plugin.configuration>
         <celerio-maven-plugin.packs.configuration>conf/celerio-template-packs.xml
         </celerio-maven-plugin.packs.configuration>
-        <celerio-maven-plugin.outputDir>${basedir}/../</celerio-maven-plugin.outputDir>
+        <celerio-maven-plugin.outputDir>${basedir}/../middleware</celerio-maven-plugin.outputDir>
 
         <!-- MYSQL DATABASE SETTINGS-->
         <jdbc.groupId>mysql</jdbc.groupId>
         <jdbc.artifactId>mysql-connector-java</jdbc.artifactId>
         <jdbc.version>5.1.40</jdbc.version>
         <jdbc.driver>com.mysql.jdbc.Driver</jdbc.driver>
-        <jdbc.url>jdbc:mysql://127.0.0.1:3306/baza381_sp</jdbc.url>
+        <jdbc.url>jdbc:mysql://127.0.0.1:3306/tdb_dev</jdbc.url>
         <jdbc.user>root</jdbc.user>
         <jdbc.password>root</jdbc.password>
         <jdbc.schema></jdbc.schema>
@@ -90,6 +90,47 @@
                                 </configuration>
                                 <goals>
                                     <goal>execute</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <dependencies>
+                            <dependency>
+                                <groupId>${jdbc.groupId}</groupId>
+                                <artifactId>${jdbc.artifactId}</artifactId>
+                                <version>${jdbc.version}</version>
+                            </dependency>
+                        </dependencies>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <!-- Drop and recreate the database -->
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <id>dbFromLiquibase</id>
+            <build>
+                <defaultGoal>initialize</defaultGoal>
+                <plugins>
+                    <plugin>
+                        <groupId>org.liquibase</groupId>
+                        <artifactId>liquibase-maven-plugin</artifactId>
+                        <version>3.5.3</version>
+                        <configuration>
+                            <changeLogFile>../middleware/src/main/resources/db/changelog/db.changelog-master.xml
+                            </changeLogFile>
+                            <driver>${jdbc.driver}</driver>
+                            <url>${jdbc.url}</url>
+                            <username>${jdbc.user}</username>
+                            <password>${jdbc.password}</password>
+                            <logging>info</logging>
+                        </configuration>
+                        <executions>
+                            <execution>
+                                <id>run-app</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>update</goal>
                                 </goals>
                             </execution>
                         </executions>

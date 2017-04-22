@@ -11,7 +11,7 @@
          xsi:schemaLocation="http://www.jaxio.com/schema/celerio ./xsd/celerio.xsd">
     <configuration>
         <packs>
-            <pack name="pack-custom" path="packs" enable="true">
+            <pack name="pack-custom" path="generator/packs" enable="true">
 
                 <properties>
                     <!--user can override pack properties -->

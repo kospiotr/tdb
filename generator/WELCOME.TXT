@@ -1,0 +1,48 @@
+aaa This is a sample 'per project' template.
+
+Templates doc: http://www.jaxio.com/documentation/celerio/templates.html
+
+Here is a simple script:
+
+    ${entity.model.type}: Department
+    ${entity.model.var}: department
+    ${entity.model.getter}: getDepartment
+    ${entity.service.type}: DepartmentService
+    ${entity.service.var}: departmentService
+    ${entity.service.getter}: getDepartmentService
+
+    ${entity.model.type}: DepartmentUnit
+    ${entity.model.var}: departmentUnit
+    ${entity.model.getter}: getDepartmentUnit
+    ${entity.service.type}: DepartmentUnitService
+    ${entity.service.var}: departmentUnitService
+    ${entity.service.getter}: getDepartmentUnitService
+
+    ${entity.model.type}: Instrument
+    ${entity.model.var}: instrument
+    ${entity.model.getter}: getInstrument
+    ${entity.service.type}: InstrumentService
+    ${entity.service.var}: instrumentService
+    ${entity.service.getter}: getInstrumentService
+
+    ${entity.model.type}: Permission
+    ${entity.model.var}: permission
+    ${entity.model.getter}: getPermission
+    ${entity.service.type}: PermissionService
+    ${entity.service.var}: permissionService
+    ${entity.service.getter}: getPermissionService
+
+    ${entity.model.type}: User
+    ${entity.model.var}: user
+    ${entity.model.getter}: getUser
+    ${entity.service.type}: UserService
+    ${entity.service.var}: userService
+    ${entity.service.getter}: getUserService
+
+    ${entity.model.type}: UserGroup
+    ${entity.model.var}: userGroup
+    ${entity.model.getter}: getUserGroup
+    ${entity.service.type}: UserGroupService
+    ${entity.service.var}: userGroupService
+    ${entity.service.getter}: getUserGroupService
+

@@ -4,66 +4,59 @@ Templates doc: http://www.jaxio.com/documentation/celerio/templates.html
 
 Here is a simple script:
 
-    ${entity.model.type}: Assets
-    ${entity.model.var}: assets
-    ${entity.model.getter}: getAssets
-    ${entity.service.type}: AssetsService
-    ${entity.service.var}: assetsService
-    ${entity.service.getter}: getAssetsService
-
-    ${entity.model.type}: Laboratories
-    ${entity.model.var}: laboratories
-    ${entity.model.getter}: getLaboratories
-    ${entity.service.type}: LaboratoriesService
-    ${entity.service.var}: laboratoriesService
-    ${entity.service.getter}: getLaboratoriesService
-
-    ${entity.model.type}: Messages
-    ${entity.model.var}: messages
-    ${entity.model.getter}: getMessages
-    ${entity.service.type}: MessagesService
-    ${entity.service.var}: messagesService
-    ${entity.service.getter}: getMessagesService
-
-    ${entity.model.type}: Newsletters
-    ${entity.model.var}: newsletters
-    ${entity.model.getter}: getNewsletters
-    ${entity.service.type}: NewslettersService
-    ${entity.service.var}: newslettersService
-    ${entity.service.getter}: getNewslettersService
-
-    ${entity.model.type}: Research
-    ${entity.model.var}: research
-    ${entity.model.getter}: getResearch
-    ${entity.service.type}: ResearchService
-    ${entity.service.var}: researchService
-    ${entity.service.getter}: getResearchService
-
-    ${entity.model.type}: Scientists
-    ${entity.model.var}: scientists
-    ${entity.model.getter}: getScientists
-    ${entity.service.type}: ScientistsService
-    ${entity.service.var}: scientistsService
-    ${entity.service.getter}: getScientistsService
-
-    ${entity.model.type}: Services
-    ${entity.model.var}: services
-    ${entity.model.getter}: getServices
-    ${entity.service.type}: ServicesService
-    ${entity.service.var}: servicesService
-    ${entity.service.getter}: getServicesService
-
-    ${entity.model.type}: Technologies
-    ${entity.model.var}: technologies
-    ${entity.model.getter}: getTechnologies
-    ${entity.service.type}: TechnologiesService
-    ${entity.service.var}: technologiesService
-    ${entity.service.getter}: getTechnologiesService
-
-    ${entity.model.type}: Users
-    ${entity.model.var}: users
-    ${entity.model.getter}: getUsers
-    ${entity.service.type}: UsersService
-    ${entity.service.var}: usersService
-    ${entity.service.getter}: getUsersService
-
+    ${entity.model.type}: Department
+    ${entity.model.var}: department
+    ${entity.model.getter}: getDepartment
+    ${entity.service.type}: DepartmentService
+    ${entity.service.var}: departmentService
+    ${entity.service.getter}: getDepartmentService
+    Relationships:
+            
+    ${entity.model.type}: DepartmentUnit
+    ${entity.model.var}: departmentUnit
+    ${entity.model.getter}: getDepartmentUnit
+    ${entity.service.type}: DepartmentUnitService
+    ${entity.service.var}: departmentUnitService
+    ${entity.service.getter}: getDepartmentUnitService
+    Relationships:
+            
+    ${entity.model.type}: Instrument
+    ${entity.model.var}: instrument
+    ${entity.model.getter}: getInstrument
+    ${entity.service.type}: InstrumentService
+    ${entity.service.var}: instrumentService
+    ${entity.service.getter}: getInstrumentService
+    Relationships:
+            
+    ${entity.model.type}: Permission
+    ${entity.model.var}: permission
+    ${entity.model.getter}: getPermission
+    ${entity.service.type}: PermissionService
+    ${entity.service.var}: permissionService
+    ${entity.service.getter}: getPermissionService
+    Relationships:
+            
+    ${entity.model.type}: User
+    ${entity.model.var}: user
+    ${entity.model.getter}: getUser
+    ${entity.service.type}: UserService
+    ${entity.service.var}: userService
+    ${entity.service.getter}: getUserService
+    Relationships:
+            - ManyToMany user <== user_group_user ==> user_group From: user To: userGroups
+            - ManyToMany user <== user_permission ==> permission From: user To: permissions
+                    - UnidirectionalManyToMany ManyToMany user <== user_group_user ==> user_group From: user To: userGroups
+            - UnidirectionalManyToMany ManyToMany user <== user_permission ==> permission From: user To: permissions
+    
+    ${entity.model.type}: UserGroup
+    ${entity.model.var}: userGroup
+    ${entity.model.getter}: getUserGroup
+    ${entity.service.type}: UserGroupService
+    ${entity.service.var}: userGroupService
+    ${entity.service.getter}: getUserGroupService
+    Relationships:
+            - ManyToMany user_group <== user_group_user ==> user From: userGroup To: users
+            - ManyToMany user_group <== user_group_permission ==> permission From: userGroup To: permissions
+                    - UnidirectionalManyToMany ManyToMany user_group <== user_group_user ==> user From: userGroup To: users
+            - UnidirectionalManyToMany ManyToMany user_group <== user_group_permission ==> permission From: userGroup To: permissions
+    

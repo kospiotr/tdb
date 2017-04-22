@@ -9,20 +9,22 @@ import "rxjs/add/operator/map";
 @Injectable()
 export class ${entity.name}Resources {
 
-  constructor(private http: Http) {
-  }
+constructor(private http: Http) {
+}
 
-  public get(id: Number): Observable<${entity.name}> {
-    return this.http.get('/rest/${entity.model.var}?id=' + id)
-      .map(res => <Page<${entity.name}>>res.json())
-      .map(page => <${entity.name}[]>page.content)
-      .map(records => <${entity.name}>records[0]);
-  }
+public get(id: Number): Observable<${entity.name}> {
+return this.http.get('/api/${entity.model.var}?id=' + id)
+.map(res =>
+<Page<${entity.name}>>res.json())
+.map(page => <${entity.name}[]>page.content)
+.map(records => <${entity.name}>records[0]);
+}
 
-  public query() {
-    return this.http.get('rest/${entity.model.var}')
-      .map(res => <Page<${entity.name}>>res.json())
-  }
+public query() {
+return this.http.get('api/${entity.model.var}')
+.map(res =>
+<Page<${entity.name}>>res.json())
+}
 
 
 }

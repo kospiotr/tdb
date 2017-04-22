@@ -2,24 +2,24 @@
 // created by: Piotr Kosmowski
 // Template pack-custom:gui/src/app/modules/generatedModules.ts.p.vm
 //
-import {AssetsModule} from "./assets/assets.module";
-import {LaboratoriesModule} from "./laboratories/laboratories.module";
-import {MessagesModule} from "./messages/messages.module";
-import {NewslettersModule} from "./newsletters/newsletters.module";
-import {ResearchModule} from "./research/research.module";
-import {ScientistsModule} from "./scientists/scientists.module";
-import {ServicesModule} from "./services/services.module";
-import {TechnologiesModule} from "./technologies/technologies.module";
-import {UsersModule} from "./users/users.module";
+import {UserGroupUserModule} from "./userGroupUser/userGroupUser.module";
+import {DepartmentModule} from "./department/department.module";
+import {DepartmentUnitModule} from "./departmentUnit/departmentUnit.module";
+import {InstrumentModule} from "./instrument/instrument.module";
+import {PermissionModule} from "./permission/permission.module";
+import {UserModule} from "./user/user.module";
+import {UserGroupModule} from "./userGroup/userGroup.module";
+import {UserGroupPermissionModule} from "./userGroupPermission/userGroupPermission.module";
+import {UserPermissionModule} from "./userPermission/userPermission.module";
 
 export const modules = [
-    AssetsModule,
-    LaboratoriesModule,
-    MessagesModule,
-    NewslettersModule,
-    ResearchModule,
-    ScientistsModule,
-    ServicesModule,
-    TechnologiesModule,
-    UsersModule,
+    UserGroupUserModule,
+    DepartmentModule,
+    DepartmentUnitModule,
+    InstrumentModule,
+    PermissionModule,
+    UserModule,
+    UserGroupModule,
+    UserGroupPermissionModule,
+    UserPermissionModule,
 ];

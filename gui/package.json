@@ -7,7 +7,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "dev": "ng serve --proxy-config proxy.conf.json",
+    "dev": "ng serve --proxy-config proxy.conf.json --no-progress",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

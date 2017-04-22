@@ -10,21 +10,21 @@ import {$entity.primaryKey.type} from "./$entity.primaryKey.typeLow";
 ## --------------- X to One
 #foreach ($relation in $entity.xToOne.list)
 #if(!$relation.to.type.equals($entity.model.type) && !$imports.contains($relation.to.type))
-import {${relation.to.type}} from '../${relation.toEntity.model.var}/${relation.toEntity.model.var}';
+import {${relation.to.type}} from '../${relation.toEntity.model.var}/${relation.toEntity.model.var}.model';
 #set($temp = $imports.add($relation.to.type))
 #end
 #end
 ## --------------- inverse X to One
 #foreach ($relation in $entity.inverseOneToOne.list)
 #if(!$relation.to.type.equals($entity.model.type) && !$imports.contains($relation.to.type))
-import {${relation.to.type}} from '../${relation.toEntity.model.var}/${relation.toEntity.model.var}';
+import {${relation.to.type}} from '../${relation.toEntity.model.var}/${relation.toEntity.model.var}.model';
 #set($temp = $imports.add($relation.to.type))
 #end
 #end
 ## --------------- Many to Many
 #foreach ($relation in $entity.manyToMany.list)
 #if(!$relation.to.type.equals($entity.model.type) && !$imports.contains($relation.to.type))
-import {${relation.to.type}} from '../${relation.toEntity.model.var}/${relation.toEntity.model.var}';
+import {${relation.to.type}} from '../${relation.toEntity.model.var}/${relation.toEntity.model.var}.model';
 #set($temp = $imports.add($relation.to.type))
 #end
 #end
