@@ -1,4 +1,4 @@
-aaa This is a sample 'per project' template.
+This is a sample 'per project' template.
 
 Templates doc: http://www.jaxio.com/documentation/celerio/templates.html
 

@@ -258,37 +258,6 @@
                 </plugins>
             </build>
         </profile>
-        <profile>
-            <id>overrideCollisions</id>
-
-            <build>
-                <defaultGoal>generate-sources</defaultGoal>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-resources-plugin</artifactId>
-                        <version>3.0.2</version>
-                        <executions>
-                            <execution>
-                                <id>copy-resources</id>
-                                <phase>generate-sources</phase>
-                                <goals>
-                                    <goal>copy-resources</goal>
-                                </goals>
-                                <configuration>
-                                    <outputDirectory>${basedir}</outputDirectory>
-                                    <resources>
-                                        <resource>
-                                            <directory>${basedir}/target/celerio-maven-plugin/collisions</directory>
-                                            <filtering>false</filtering>
-                                        </resource>
-                                    </resources>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
     </profiles>
 
 </project>
