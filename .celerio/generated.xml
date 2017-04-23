@@ -1,12 +1,12 @@
 <map>
   <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroup.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/department/departmentList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
-      <size>769</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroup.component.spec.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
+      <size>1479</size>
+      <path>gui/src/app/gen-modules/department/departmentList.component.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -20,16 +20,6 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.model.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
-      <size>306</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.model.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
     <string>middleware/src/main/generated-java/pl/xperios/tdb/rest/UserResource.java</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -37,6 +27,26 @@
       <size>2828</size>
       <path>middleware/src/main/generated-java/pl/xperios/tdb/rest/UserResource.java</path>
       <lastMod>1492880151000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permission.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
+      <size>1457</size>
+      <path>gui/src/app/gen-modules/permission/permission.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permission.resources.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
+      <size>766</size>
+      <path>gui/src/app/gen-modules/permission/permission.resources.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -50,63 +60,63 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroup.component.less</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroup.component.less</path>
-      <lastMod>1492872363000</lastMod>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.less</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/instrument/instrument.model.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
-      <size>392</size>
-      <path>gui/src/app/gen-modules/instrument/instrument.model.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
+      <size>756</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.resources.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/repository/UserRepository.java</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>middleware/src/main/java/repository/EntityRepository.java.e.vm</template>
-      <size>1680</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/repository/UserRepository.java</path>
-      <lastMod>1492880151000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
+      <size>400</size>
+      <path>gui/src/app/gen-modules/instrument/instrument.component.less</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/instrument/instrumentList.component.html</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
-      <size>2607</size>
-      <path>gui/src/app/gen-modules/instrument/instrumentList.component.html</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
+      <size>1567</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>target/celerio-maven-plugin/collisions/middleware/src/main/generated-java/pl/xperios/tdb/domain/UserGroup.java</string>
+    <string>gui/src/app/gen-modules/user/user.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>middleware/src/main/java/domain/Entity.java.e.vm</template>
-      <size>4345</size>
-      <path>target/celerio-maven-plugin/collisions/middleware/src/main/generated-java/pl/xperios/tdb/domain/UserGroup.java</path>
-      <lastMod>1492872364000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
+      <size>976</size>
+      <path>gui/src/app/gen-modules/user/user.routes.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/rest/InstrumentResource.java</string>
+    <string>gui/src/app/gen-modules/department/departmentList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>middleware/src/main/java/rest/EntityResource.java.e.vm</template>
-      <size>2996</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/rest/InstrumentResource.java</path>
-      <lastMod>1492880151000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
+      <size>400</size>
+      <path>gui/src/app/gen-modules/department/departmentList.component.less</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -120,43 +130,33 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/instrument/instrument.component.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
-      <size>1070</size>
-      <path>gui/src/app/gen-modules/instrument/instrument.component.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <size>1061</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.component.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/DepartmentUnit_.java</string>
+    <string>gui/src/app/gen-modules/user/user.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>middleware/src/main/java/domain/EntityMeta_.java.e.vm</template>
-      <size>609</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/DepartmentUnit_.java</path>
-      <lastMod>1492880150000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
+      <size>738</size>
+      <path>gui/src/app/gen-modules/user/user.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/instrument/instrumentList.component.ts</string>
+    <string>gui/src/app/gen-modules/department/department.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
-      <size>1475</size>
-      <path>gui/src/app/gen-modules/instrument/instrumentList.component.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/permission/permission.resources.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
-      <size>762</size>
-      <path>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/permission/permission.resources.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
+      <size>221</size>
+      <path>gui/src/app/gen-modules/department/department.model.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -170,93 +170,63 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroup.module.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
-      <size>804</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroup.module.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/instrument/instrumentList.component.less</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
-      <size>400</size>
-      <path>gui/src/app/gen-modules/instrument/instrumentList.component.less</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.html</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
-      <size>2615</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.html</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/user/userList.component.html</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
-      <size>2595</size>
-      <path>gui/src/app/gen-modules/user/userList.component.html</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
     <string>gui/src/app/gen-modules/userGroup/userGroupList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
       <size>2605</size>
       <path>gui/src/app/gen-modules/userGroup/userGroupList.component.html</path>
-      <lastMod>1492872363000</lastMod>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.module.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
-      <size>869</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.module.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
+      <size>1457</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/Permission.java</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>middleware/src/main/java/domain/Entity.java.e.vm</template>
-      <size>1033</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/Permission.java</path>
-      <lastMod>1492880150000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
+      <size>310</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.model.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/UserGroup.java</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>middleware/src/main/java/domain/Entity.java.e.vm</template>
-      <size>4345</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/UserGroup.java</path>
-      <lastMod>1492880150000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
+      <size>400</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.less</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
-      <size>836</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.spec.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
+      <size>400</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.less</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.component.spec.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
+      <size>773</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -280,103 +250,63 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroup.routes.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
-      <size>1072</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroup.routes.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <size>1176</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.routes.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/user/user.component.less</string>
+    <string>gui/src/app/gen-modules/department/departmentList.component.spec.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
+      <size>812</size>
+      <path>gui/src/app/gen-modules/department/departmentList.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permission.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/gen-modules/user/user.component.less</path>
-      <lastMod>1492872363000</lastMod>
+      <path>gui/src/app/gen-modules/permission/permission.component.less</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/repository/PermissionRepository.java</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>middleware/src/main/java/repository/EntityRepository.java.e.vm</template>
-      <size>1758</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/repository/PermissionRepository.java</path>
-      <lastMod>1492880151000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/user/userList.component.less</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
-      <size>400</size>
-      <path>gui/src/app/gen-modules/user/userList.component.less</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.spec.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
-      <size>804</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.spec.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.less</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
-      <size>400</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.less</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/instrument/instrument.component.less</string>
+    <string>gui/src/app/gen-modules/department/department.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/gen-modules/instrument/instrument.component.less</path>
-      <lastMod>1492872363000</lastMod>
+      <path>gui/src/app/gen-modules/department/department.component.less</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/department/department.resources.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
+      <size>1457</size>
+      <path>gui/src/app/gen-modules/instrument/instrument.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
-      <size>762</size>
-      <path>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/department/department.resources.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/user/userList.component.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
-      <size>1343</size>
-      <path>gui/src/app/gen-modules/user/userList.component.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/rest/DepartmentUnitResource.java</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>middleware/src/main/java/rest/EntityResource.java.e.vm</template>
-      <size>3108</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/rest/DepartmentUnitResource.java</path>
-      <lastMod>1492880151000</lastMod>
+      <size>806</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.resources.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -384,28 +314,38 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
-      <size>739</size>
+      <size>743</size>
       <path>gui/src/app/gen-modules/user/user.module.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroup.resources.ts</string>
+    <string>gui/src/app/gen-modules/department/department.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
+      <size>1457</size>
+      <path>gui/src/app/gen-modules/department/department.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permissionList.component.spec.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
+      <size>812</size>
+      <path>gui/src/app/gen-modules/permission/permissionList.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/permission/permission.resources.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
-      <size>752</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroup.resources.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
-      <size>1453</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.ts</path>
+      <size>762</size>
+      <path>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/permission/permission.resources.ts</path>
       <lastMod>1492872363000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
@@ -420,23 +360,13 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroup.component.ts</string>
+    <string>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/generatedModules.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
-      <size>1057</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroup.component.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
-      <size>1563</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/generatedModules.ts.p.vm</template>
+      <size>970</size>
+      <path>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/generatedModules.ts</path>
+      <lastMod>1492872362000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -450,83 +380,43 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/instrument/instrument.component.spec.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
-      <size>776</size>
-      <path>gui/src/app/gen-modules/instrument/instrument.component.spec.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/instrument/instrument.component.html</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
-      <size>1457</size>
-      <path>gui/src/app/gen-modules/instrument/instrument.component.html</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.routes.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
-      <size>1172</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.routes.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroup.model.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
-      <size>391</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroup.model.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/user/user.resources.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
-      <size>702</size>
-      <path>gui/src/app/gen-modules/user/user.resources.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.less</string>
+    <string>gui/src/app/gen-modules/instrument/instrumentList.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.less</path>
-      <lastMod>1492872363000</lastMod>
+      <path>gui/src/app/gen-modules/instrument/instrumentList.component.less</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.html</string>
+    <string>gui/src/app/gen-modules/user/user.model.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
-      <size>1461</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.html</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
+      <size>463</size>
+      <path>gui/src/app/gen-modules/user/user.model.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/generatedModules.ts</string>
+    <string>gui/src/app/gen-modules/department/department.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/generatedModules.ts.p.vm</template>
-      <size>970</size>
-      <path>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/generatedModules.ts</path>
-      <lastMod>1492872362000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
+      <size>1074</size>
+      <path>gui/src/app/gen-modules/department/department.component.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.module.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
+      <size>873</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.module.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -540,113 +430,43 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
-      <size>1122</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/user/user.component.html</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
-      <size>1451</size>
-      <path>gui/src/app/gen-modules/user/user.component.html</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/repository/InstrumentRepository.java</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>middleware/src/main/java/repository/EntityRepository.java.e.vm</template>
-      <size>1420</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/repository/InstrumentRepository.java</path>
-      <lastMod>1492880150000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/instrument/instrument.resources.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
-      <size>762</size>
-      <path>gui/src/app/gen-modules/instrument/instrument.resources.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/user/userList.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
-      <size>801</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.spec.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <size>770</size>
+      <path>gui/src/app/gen-modules/user/userList.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/instrument/instrument.routes.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrumentList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
-      <size>1092</size>
-      <path>gui/src/app/gen-modules/instrument/instrument.routes.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
+      <size>2607</size>
+      <path>gui/src/app/gen-modules/instrument/instrumentList.component.html</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.resources.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
-      <size>802</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.resources.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/user/user.component.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
-      <size>992</size>
-      <path>gui/src/app/gen-modules/user/user.component.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/user/user.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/permission/permission.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
-      <size>734</size>
-      <path>gui/src/app/gen-modules/user/user.component.spec.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <size>780</size>
+      <path>gui/src/app/gen-modules/permission/permission.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/repository/DepartmentRepository.java</string>
+    <string>gui/src/app/gen-modules/department/departmentList.component.html</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>middleware/src/main/java/repository/EntityRepository.java.e.vm</template>
-      <size>1420</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/repository/DepartmentRepository.java</path>
-      <lastMod>1492880150000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>gui/src/app/gen-modules/user/user.model.ts</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
-      <size>459</size>
-      <path>gui/src/app/gen-modules/user/user.model.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
+      <size>2607</size>
+      <path>gui/src/app/gen-modules/department/departmentList.component.html</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -660,6 +480,26 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
+      <size>2615</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/instrument/instrument.component.spec.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
+      <size>780</size>
+      <path>gui/src/app/gen-modules/instrument/instrument.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
     <string>target/celerio-maven-plugin/collisions/WELCOME.TXT</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
@@ -670,13 +510,223 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.less</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
+      <size>1461</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permission.component.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
+      <size>1074</size>
+      <path>gui/src/app/gen-modules/permission/permission.component.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/User_.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/domain/EntityMeta_.java.e.vm</template>
+      <size>884</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/User_.java</path>
+      <lastMod>1492880150000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/generatedModules.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/generatedModules.ts.p.vm</template>
+      <size>974</size>
+      <path>gui/src/app/gen-modules/generatedModules.ts</path>
+      <lastMod>1492880373000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/DepartmentUnit.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/domain/Entity.java.e.vm</template>
+      <size>2028</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/DepartmentUnit.java</path>
+      <lastMod>1492880150000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
+      <size>1456</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.model.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
+      <size>395</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.model.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/repository/UserRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/repository/EntityRepository.java.e.vm</template>
+      <size>1680</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/repository/UserRepository.java</path>
+      <lastMod>1492880151000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>target/celerio-maven-plugin/collisions/middleware/src/main/generated-java/pl/xperios/tdb/domain/UserGroup.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/domain/Entity.java.e.vm</template>
+      <size>4345</size>
+      <path>target/celerio-maven-plugin/collisions/middleware/src/main/generated-java/pl/xperios/tdb/domain/UserGroup.java</path>
+      <lastMod>1492872364000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/rest/InstrumentResource.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/rest/EntityResource.java.e.vm</template>
+      <size>2996</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/rest/InstrumentResource.java</path>
+      <lastMod>1492880151000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permission.module.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
+      <size>821</size>
+      <path>gui/src/app/gen-modules/permission/permission.module.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/DepartmentUnit_.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/domain/EntityMeta_.java.e.vm</template>
+      <size>609</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/DepartmentUnit_.java</path>
+      <lastMod>1492880150000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/user/user.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
+      <size>1451</size>
+      <path>gui/src/app/gen-modules/user/user.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permissionList.component.less</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
+      <size>400</size>
+      <path>gui/src/app/gen-modules/permission/permissionList.component.less</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/user/user.component.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
+      <size>996</size>
+      <path>gui/src/app/gen-modules/user/user.component.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/instrument/instrument.component.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
+      <size>1074</size>
+      <path>gui/src/app/gen-modules/instrument/instrument.component.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/department/department.routes.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
+      <size>1096</size>
+      <path>gui/src/app/gen-modules/department/department.routes.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/user/user.component.less</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
       <size>400</size>
-      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.less</path>
-      <lastMod>1492872363000</lastMod>
+      <path>gui/src/app/gen-modules/user/user.component.less</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/userGroup/userGroupList.component.spec.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
+      <size>805</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroupList.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/department/department.resources.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
+      <size>766</size>
+      <path>gui/src/app/gen-modules/department/department.resources.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/Permission.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/domain/Entity.java.e.vm</template>
+      <size>1033</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/Permission.java</path>
+      <lastMod>1492880150000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/user/user.resources.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
+      <size>706</size>
+      <path>gui/src/app/gen-modules/user/user.resources.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -684,9 +734,209 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
-      <size>808</size>
+      <size>812</size>
       <path>gui/src/app/gen-modules/instrument/instrumentList.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/UserGroup.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/domain/Entity.java.e.vm</template>
+      <size>4345</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/UserGroup.java</path>
+      <lastMod>1492880150000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permissionList.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
+      <size>2607</size>
+      <path>gui/src/app/gen-modules/permission/permissionList.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/department/department.resources.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
+      <size>762</size>
+      <path>target/celerio-maven-plugin/collisions/gui/src/app/gen-modules/department/department.resources.ts</path>
       <lastMod>1492872363000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/repository/PermissionRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/repository/EntityRepository.java.e.vm</template>
+      <size>1758</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/repository/PermissionRepository.java</path>
+      <lastMod>1492880151000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/user/userList.component.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
+      <size>1347</size>
+      <path>gui/src/app/gen-modules/user/userList.component.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/department/department.component.spec.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
+      <size>780</size>
+      <path>gui/src/app/gen-modules/department/department.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.component.less</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.component.less.e.vm</template>
+      <size>400</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.component.less</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/rest/DepartmentUnitResource.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/rest/EntityResource.java.e.vm</template>
+      <size>3108</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/rest/DepartmentUnitResource.java</path>
+      <lastMod>1492880151000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/department/department.module.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
+      <size>821</size>
+      <path>gui/src/app/gen-modules/department/department.module.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.module.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
+      <size>808</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.module.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/user/userList.component.html</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.html.e.vm</template>
+      <size>2595</size>
+      <path>gui/src/app/gen-modules/user/userList.component.html</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permission.routes.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
+      <size>1096</size>
+      <path>gui/src/app/gen-modules/permission/permission.routes.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/instrument/instrument.resources.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.resources.ts.e.vm</template>
+      <size>766</size>
+      <path>gui/src/app/gen-modules/instrument/instrument.resources.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permissionList.component.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
+      <size>1479</size>
+      <path>gui/src/app/gen-modules/permission/permissionList.component.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/repository/InstrumentRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/repository/EntityRepository.java.e.vm</template>
+      <size>1420</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/repository/InstrumentRepository.java</path>
+      <lastMod>1492880150000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/user/userList.component.less</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.less.e.vm</template>
+      <size>400</size>
+      <path>gui/src/app/gen-modules/user/userList.component.less</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/permission/permission.model.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
+      <size>224</size>
+      <path>gui/src/app/gen-modules/permission/permission.model.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.spec.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
+      <size>840</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnitList.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/userGroup/userGroup.routes.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
+      <size>1076</size>
+      <path>gui/src/app/gen-modules/userGroup/userGroup.routes.ts</path>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>middleware/src/main/generated-java/pl/xperios/tdb/repository/DepartmentRepository.java</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>middleware/src/main/java/repository/EntityRepository.java.e.vm</template>
+      <size>1420</size>
+      <path>middleware/src/main/generated-java/pl/xperios/tdb/repository/DepartmentRepository.java</path>
+      <lastMod>1492880150000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -694,9 +944,19 @@
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
       <template>gui/src/app/gen-modules/entities/entity.module.ts.e.vm</template>
-      <size>817</size>
+      <size>821</size>
       <path>gui/src/app/gen-modules/instrument/instrument.module.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <lastMod>1492880374000</lastMod>
+    </com.jaxio.celerio.output.FileMetaData>
+  </entry>
+  <entry>
+    <string>gui/src/app/gen-modules/instrument/instrument.model.ts</string>
+    <com.jaxio.celerio.output.FileMetaData>
+      <pack>pack-custom</pack>
+      <template>gui/src/app/gen-modules/entities/entity.model.ts.e.vm</template>
+      <size>396</size>
+      <path>gui/src/app/gen-modules/instrument/instrument.model.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -720,13 +980,13 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/User_.java</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.spec.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>middleware/src/main/java/domain/EntityMeta_.java.e.vm</template>
-      <size>884</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/User_.java</path>
-      <lastMod>1492880150000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.component.spec.ts.e.vm</template>
+      <size>808</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.spec.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -740,23 +1000,23 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/user/userList.component.spec.ts</string>
+    <string>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entityList.component.spec.ts.e.vm</template>
-      <size>766</size>
-      <path>gui/src/app/gen-modules/user/userList.component.spec.ts</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.component.ts.e.vm</template>
+      <size>1126</size>
+      <path>gui/src/app/gen-modules/departmentUnit/departmentUnit.component.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/userGroup/userGroup.component.html</string>
+    <string>gui/src/app/gen-modules/instrument/instrument.routes.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.component.html.e.vm</template>
-      <size>1456</size>
-      <path>gui/src/app/gen-modules/userGroup/userGroup.component.html</path>
-      <lastMod>1492872363000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
+      <size>1096</size>
+      <path>gui/src/app/gen-modules/instrument/instrument.routes.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
@@ -770,23 +1030,13 @@
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
   <entry>
-    <string>gui/src/app/gen-modules/user/user.routes.ts</string>
+    <string>gui/src/app/gen-modules/instrument/instrumentList.component.ts</string>
     <com.jaxio.celerio.output.FileMetaData>
       <pack>pack-custom</pack>
-      <template>gui/src/app/gen-modules/entities/entity.routes.ts.e.vm</template>
-      <size>972</size>
-      <path>gui/src/app/gen-modules/user/user.routes.ts</path>
-      <lastMod>1492872363000</lastMod>
-    </com.jaxio.celerio.output.FileMetaData>
-  </entry>
-  <entry>
-    <string>middleware/src/main/generated-java/pl/xperios/tdb/domain/DepartmentUnit.java</string>
-    <com.jaxio.celerio.output.FileMetaData>
-      <pack>pack-custom</pack>
-      <template>middleware/src/main/java/domain/Entity.java.e.vm</template>
-      <size>2028</size>
-      <path>middleware/src/main/generated-java/pl/xperios/tdb/domain/DepartmentUnit.java</path>
-      <lastMod>1492880150000</lastMod>
+      <template>gui/src/app/gen-modules/entities/entityList.component.ts.e.vm</template>
+      <size>1479</size>
+      <path>gui/src/app/gen-modules/instrument/instrumentList.component.ts</path>
+      <lastMod>1492880374000</lastMod>
     </com.jaxio.celerio.output.FileMetaData>
   </entry>
 </map>

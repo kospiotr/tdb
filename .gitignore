@@ -12,6 +12,8 @@ gui/node
 gui/dist
 gui/etc
 gui/target
+gui/src/app/gen-modules
 generator/generated
 generator/dump.sql
+middleware/src/main/generated-java
 *.iml
