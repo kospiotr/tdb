@@ -1,0 +1,1 @@
+cd middleware && mvn spring-boot:run -Drun.profiles=dev

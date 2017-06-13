@@ -1,7 +1,7 @@
 $output.file("gui/src/app/gen-modules/generatedModules.ts")##
 #set($modules=[])
-#foreach($entity in $project.entities.list)
-    #set($temp = $modules.add($entity))
+#foreach($entity in $project.withoutManyToManyJoinEntities.list)
+        #set($temp = $modules.add($entity))
 #end
 #foreach($module in $modules)
 import {${module.name}Module} from "./${module.model.var}/${module.model.var}.module";

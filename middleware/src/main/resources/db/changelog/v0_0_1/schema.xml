@@ -1,5 +1,9 @@
 <?xml version="1.1" encoding="UTF-8" standalone="no"?>
-<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd">
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.5.xsd"
+                   objectQuotingStrategy="QUOTE_ALL_OBJECTS">
+
     <changeSet author="kospiotr (generated)" id="1487801138747-1">
         <createTable tableName="department">
             <column autoIncrement="true" name="id" type="BIGINT">
@@ -93,13 +97,15 @@
         <addUniqueConstraint columnNames="name" constraintName="UK_2ojme20jpga3r4r79tdso17gi" tableName="permission"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-11">
-        <addUniqueConstraint columnNames="permission_id" constraintName="UK_5jfoyhv0p0tg0d5dwf8oo4rjh" tableName="user_permission"/>
+        <addUniqueConstraint columnNames="permission_id" constraintName="UK_5jfoyhv0p0tg0d5dwf8oo4rjh"
+                             tableName="user_permission"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-12">
         <addUniqueConstraint columnNames="name" constraintName="UK_kas9w8ead0ska5n3csefp2bpp" tableName="user_group"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-13">
-        <addUniqueConstraint columnNames="permission_id" constraintName="UK_n1u0lh4amuscu05j9tkfpqgew" tableName="user_group_permission"/>
+        <addUniqueConstraint columnNames="permission_id" constraintName="UK_n1u0lh4amuscu05j9tkfpqgew"
+                             tableName="user_group_permission"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-14">
         <addUniqueConstraint columnNames="username" constraintName="UK_sb8bbouer5wak8vyiiy4pf2bx" tableName="user"/>
@@ -135,27 +141,51 @@
         </createIndex>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-21">
-        <addForeignKeyConstraint baseColumnNames="user_group_id" baseTableName="user_group_user" constraintName="FK35c0kokvxaajs05y2dkeoj9x1" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user_group"/>
+        <addForeignKeyConstraint baseColumnNames="user_group_id" baseTableName="user_group_user"
+                                 constraintName="FK35c0kokvxaajs05y2dkeoj9x1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="user_group"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-22">
-        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="user_permission" constraintName="FK7c2x74rinbtf33lhdcyob20sh" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user"/>
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="user_permission"
+                                 constraintName="FK7c2x74rinbtf33lhdcyob20sh" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="user"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-23">
-        <addForeignKeyConstraint baseColumnNames="department_id" baseTableName="department_unit" constraintName="FKapply479dhuhwdgmgwochj1vx" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="department"/>
+        <addForeignKeyConstraint baseColumnNames="department_id" baseTableName="department_unit"
+                                 constraintName="FKapply479dhuhwdgmgwochj1vx" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="department"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-24">
-        <addForeignKeyConstraint baseColumnNames="permission_id" baseTableName="user_permission" constraintName="FKbklmo9kchans5u3e4va0ouo1s" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="permission"/>
+        <addForeignKeyConstraint baseColumnNames="permission_id" baseTableName="user_permission"
+                                 constraintName="FKbklmo9kchans5u3e4va0ouo1s" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="permission"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-25">
-        <addForeignKeyConstraint baseColumnNames="permission_id" baseTableName="user_group_permission" constraintName="FKbn8t0q3ild5ps4nath5tb9sda" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="permission"/>
+        <addForeignKeyConstraint baseColumnNames="permission_id" baseTableName="user_group_permission"
+                                 constraintName="FKbn8t0q3ild5ps4nath5tb9sda" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="permission"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-26">
-        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="user_group_user" constraintName="FKpdbp7j3b0f5wgcset6psk0spk" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user"/>
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="user_group_user"
+                                 constraintName="FKpdbp7j3b0f5wgcset6psk0spk" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="user"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-27">
-        <addForeignKeyConstraint baseColumnNames="user_group_id" baseTableName="user_group_permission" constraintName="FKpvewqags2qqto6e9afvwadde" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="user_group"/>
+        <addForeignKeyConstraint baseColumnNames="user_group_id" baseTableName="user_group_permission"
+                                 constraintName="FKpvewqags2qqto6e9afvwadde" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="user_group"/>
     </changeSet>
     <changeSet author="kospiotr (generated)" id="1487801138747-28">
-        <addForeignKeyConstraint baseColumnNames="department_unit_id" baseTableName="instrument" constraintName="FKrk1bcrn0vlo2qi5bxriva4mvo" deferrable="false" initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION" referencedColumnNames="id" referencedTableName="department_unit"/>
+        <addForeignKeyConstraint baseColumnNames="department_unit_id" baseTableName="instrument"
+                                 constraintName="FKrk1bcrn0vlo2qi5bxriva4mvo" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="department_unit"/>
     </changeSet>
 </databaseChangeLog>

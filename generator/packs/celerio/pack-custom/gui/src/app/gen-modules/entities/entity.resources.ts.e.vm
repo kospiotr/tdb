@@ -13,7 +13,7 @@ constructor(private http: Http) {
 }
 
 public get(id: Number): Observable<${entity.name}> {
-return this.http.get('/api/${entity.model.var}?id=' + id)
+return this.http.get('/rest/${entity.model.var}?id=' + id)
 .map(res =>
 <Page<${entity.name}>>res.json())
 .map(page => <${entity.name}[]>page.content)
@@ -21,7 +21,7 @@ return this.http.get('/api/${entity.model.var}?id=' + id)
 }
 
 public query() {
-return this.http.get('api/${entity.model.var}')
+return this.http.get('rest/${entity.model.var}')
 .map(res =>
 <Page<${entity.name}>>res.json())
 }

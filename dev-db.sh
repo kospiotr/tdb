@@ -1,0 +1,1 @@
+docker-compose -f middleware/src/main/docker/mongodb.yml up

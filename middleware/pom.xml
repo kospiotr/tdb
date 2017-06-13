@@ -94,12 +94,6 @@
             <artifactId>p6spy</artifactId>
             <version>2.1.4</version>
         </dependency>
-
-            <dependency>
-                <groupId>com.jaxio.celerio</groupId>
-                <artifactId>celerio-maven-plugin</artifactId>
-                <version>${celerio-maven-plugin.version}</version>
-            </dependency>
     </dependencies>
 
     <build>

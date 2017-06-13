@@ -5,19 +5,19 @@ import {HttpModule} from "@angular/http";
 import {AppComponent} from "./app.component";
 import {AppRoutes} from "./app.routes";
 import * as customModules from "./modules/customModules";
-import * as generatedModules from "./modules/generatedModules";
+import * as generatedModules from "./gen-modules/generatedModules";
 
 @NgModule({
   declarations: [
     AppComponent,
   ],
-  imports: ([
+  imports: (([
     BrowserModule,
     FormsModule,
     HttpModule, AppRoutes
   ] as any[])
     .concat(customModules.modules)
-    .concat(generatedModules.modules),
+    .concat(generatedModules.modules)) as any[],
   bootstrap: [AppComponent]
 })
 export class AppModule {
